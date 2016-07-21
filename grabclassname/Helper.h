@@ -2,9 +2,13 @@
 #include <list>
 #include <string>
 #include <iostream>
+#include <cstring>
+#include <cstdlib>
+#include <cstdio>
 using namespace std;
 
-#define HELPER_MAX_LINE_COUNTS 50000
+#define HELPER_MAX_LINE_COUNTS 200000
+#define HELPER_MAX_BUF_LEN 1000000
 #define HELPER_EVERY_LINE_LENGTH 300
 #define HELPER_GET_INDEX_NOT_CHAR_NOT_FOUND -1
 #define HELPER_LANGUAGE_C	0
@@ -22,36 +26,7 @@ public:
 
 
 public:
-	static std::list<string> split(char* buf)
-	{
-		char* tmpbuf = copyBuf(buf, 2);
-		int cline = getLineCounts(tmpbuf);
-		int buflen = strlen(tmpbuf);
-		std::list<string> lines;
-		replace(tmpbuf, buflen, '\r', 0);
-		replace(tmpbuf, buflen, '\n', 0);
 
-		char* pointers[HELPER_MAX_LINE_COUNTS] = { NULL };
-		int linecount = 0;
-		for (int i = 0; i < buflen;)
-		{
-			if (tmpbuf[i] != 0)
-			{
-				pointers[linecount] = tmpbuf + i;
-				lines.push_back(pointers[linecount]);
-				linecount++;
-				i += strlen(tmpbuf + i);
-			}
-			else
-			{
-				i += 1;
-			}
-		}
-
-		delete[] tmpbuf;
-		tmpbuf = NULL;
-		return lines;
-	}
 
 	static char* copyBuf(char* buf, int extlen)
 	{
@@ -83,7 +58,7 @@ public:
 	//sample: bool success = listfile("dir \"d:/*\" /s /b > tmp.txt");
 	static bool listfile(const char * pattern)
 	{
-		cout << pattern << endl;
+		//cout << pattern << endl;
 		system(pattern);
 		return true;
 	}
@@ -153,6 +128,157 @@ public:
 		}
 	}
 
+	/*
+		make sure buf has enough space to put (to-start) bytes
+		example:
+
+			buf = "111";
+			start= "oneword";
+			to = start+5;
+			addbuf(buf,start,to);
+
+		result:
+			buf == "111onewo"
+	*/
+	static void addbuf(char* buf, char* start, char* to)
+	{
+		int len = strlen(buf);
+		memcpy(buf + len, start, to - start);
+
+	}
+
+	/*
+		example:
+			buf  = "123";
+			ret  = tailof(buf);
+		result:
+			ret  == buf+3
+			*ret == 0
+	*/
+	static char* tailof(char* buf)
+	{
+		return buf + strlen(buf);
+	}
+
+	static void zerobuf(char* buf, int start, int len)
+	{
+		for (size_t i = start; i < start+len; i++)
+		{
+			buf[i] = 0;
+		}
+	}
+
+	static bool strcmpIgnoreZero(char* buf, char* dst, int dstlen)
+	{
+		for (size_t i = 0; i < dstlen; i++)
+		{
+			if (buf[i] != dst[i])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+
+	/*
+		example:
+			buf = "123123";
+			zerobufWithPattern(buf,strlen(buf),"31");
+
+		result:
+			buf == "12\0\023"
+
+	*/
+	static void zerobufWithPattern(char* buf, int buflen, char* dst)
+	{
+		char *newbuf = new char[HELPER_MAX_BUF_LEN];
+		memset(newbuf, 0, HELPER_MAX_BUF_LEN);
+		strcpy(newbuf, buf);
+
+		int len1 = buflen;
+
+		char* p0 = newbuf;
+		char* p1 = buf;
+		char* p1_last = p1;
+		char* p1_tail = buf + len1;
+
+		//newbuf                                 buf
+
+		//										        p1_last
+		//										                   p1_tail
+		//      p0									     p1_   p1
+		//0000000000000000000000                 abasdfasdfasdfasff
+
+		while (p1 < p1_tail)
+		{
+			p1 = strstr(p1, dst);
+			if (p1 == NULL)
+			{
+				break;
+			}
+			else
+			{
+				zerobuf(newbuf, p1 - buf, strlen(dst));
+				p1 = p1 + strlen(dst);
+				p1_last = p1;
+			}
+		}
+		memcpy(buf, newbuf, strlen(buf));
+		delete[] newbuf;
+		newbuf = NULL;
+	}
+
+
+
+	static void replace(char* buf, int buflen, char* from, char* to)
+	{
+		char *newbuf = new char[HELPER_MAX_BUF_LEN];
+		memset(newbuf, 0, HELPER_MAX_BUF_LEN);
+
+		int len1 = buflen;
+
+		char* p0 = newbuf;
+		char* p1 = buf;
+		char* p1_last = p1;
+		char* p1_tail = buf + len1;
+		
+		//newbuf                                 buf
+		
+		//										        p1_last
+		//										                   p1_tail
+		//      p0									     p1_   p1
+		//0000000000000000000000                 abasdfasdfasdfasff
+
+		while (p1 < p1_tail)
+		{
+			p1 = strstr(p1, from);
+			if (p1 == NULL)
+			{
+				strcat(newbuf, p1_last);
+				p1 += strlen(p1_last);
+				p1_last = p1;
+				p0 = tailof(newbuf);
+				break;
+			}
+			else
+			{
+				addbuf(newbuf, p1_last, p1);
+				strcat(newbuf, to);
+				p0 = tailof(newbuf);
+				p1 = p1 + strlen(from);
+				p1_last = p1;
+			}
+		}
+
+
+		memset(buf, 0, buflen);
+		memcpy(buf, newbuf, strlen(newbuf));
+		delete[] newbuf;
+		newbuf = NULL;
+	}
+
+
 	static void show(std::list<string> l)
 	{
 		for each (string var in l)
@@ -161,20 +287,8 @@ public:
 		}
 	}
 
-	static std::list<string> dofile(char* filename)
-	{
-		char* tmp = load(filename);
-		if (tmp == NULL)
-		{
-			std::list<string> null_list;
-			return null_list;
-		}
 
-		std::list<string> ret = split(tmp);
-		delete[]tmp;
-		tmp = NULL;
-		return ret;
-	}
+
 
 	static bool isEndWithString(char* buf, char* dst)
 	{

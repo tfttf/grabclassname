@@ -4,34 +4,30 @@
 #include "stdafx.h"
 #include "Helper.h"
 #include "Assert.h"
+#include "TestRun.h"
+#include "Application.h"
 #include <iostream>
 using namespace std;
 
+#define IS_RELEASE 1
 
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Helper h;
-	Assert a;
-	a.assert_argc(argc);
+#if IS_RELEASE
+	Application app;
+	app.init(argc, argv);
+	app.run();
 
-	string cmd = h.makeCmd(argv[1]);
-	bool success = h.listfile(cmd.c_str());
-	a.assert_load_file_success(success);
+#else
 	
-	std::list<string> filelist = h.dofile("tmp.txt");
-	h.show(filelist);
+	TestRun t;
+	t.replace();
+	t.zerobufWithPattern();
+	t.strcmpIgnoreZero();
 
-	cout << endl;
-	cout << endl;
-	cout << "begin list files" << endl;
-	for each (string var in filelist)
-	{
-		//std::list<string> l = h.dofile("d:/1.txt");
-		std::list<string> l = h.dofile(const_cast<char*>(var.c_str()));
-		h.show(l);
-	}
+#endif
 	
 	return 0;
 }
