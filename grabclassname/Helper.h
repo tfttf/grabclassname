@@ -5,6 +5,7 @@
 #include <cstring>
 #include <cstdlib>
 #include <cstdio>
+#include <cassert>
 using namespace std;
 
 #define HELPER_MAX_LINE_COUNTS 200000
@@ -278,6 +279,92 @@ public:
 		newbuf = NULL;
 	}
 
+	static char* allocbuf(int len)
+	{
+		char* buf = new char[len];
+		memset(buf, 0, len);
+		return buf;
+	}
+
+	static char* zerobuf(char* buf)
+	{
+		int len = strlen(buf);
+		memset(buf, 0, len);
+		return buf;
+	}
+
+	static char* zerobuf(char* buf, int len)
+	{
+		memset(buf, 0, len);
+		return buf;
+	}
+
+	static char* zerobufof(char* buf, int start, int size)
+	{
+		memset(buf + start, 0, size);
+		return buf;
+	}
+
+	static std::list<string> strssub(std::list<string> l, int start, int size)
+	{
+		char buf[100000] = "";
+		std::list<string> ret;
+		for each (string var in l)
+		{
+			zerobuf(buf, 100000);
+			strcpy(buf, var.c_str());
+			strsub(buf, start, size);
+			ret.push_back(buf);
+		}
+		return ret;
+	}
+
+	static void strsub(char* buf, int start, int size)
+	{
+		int len = strlen(buf);
+		if (len < start + size)
+		{
+			cout << "error: start + size is larger than buf len" << endl;
+			return;
+		}
+
+		char* handlebuf = allocbuf(len+1);
+		if (start > 0)
+		{
+			memcpy(handlebuf, buf, start);
+			strcat(handlebuf, buf + start + size);
+		}
+		else if (start==0)
+		{
+			strcat(handlebuf, buf+size);
+		}
+		else
+		{
+			cout << "error: start < 0 !" << endl;
+			return;
+		}
+
+		zerobuf(buf);
+		strcpy(buf, handlebuf);
+		delete[] handlebuf;
+		handlebuf = NULL;
+
+	}
+
+	static void writelistToFile(std::list<string> l, char* filename, char* split)
+	{
+		FILE *fp = fopen(filename,"w+b");
+		assert(fp);
+		for each (string var in l)
+		{
+			fwrite(var.c_str(), 1, strlen(var.c_str()), fp);
+			if (split)
+			{
+				fwrite(split, 1, strlen(split), fp);
+			}
+		}
+		fclose(fp);
+	}
 
 	static void show(std::list<string> l)
 	{
@@ -302,6 +389,86 @@ public:
 		{
 			return false;
 		}
+	}
+
+	static bool isEndWithString(char* buf, std::list<string> dst)
+	{
+		bool bFind = false;
+
+		for each (string var in dst)
+		{
+			int len_buf = strlen(buf);
+			int len_dst = strlen(var.c_str());
+			if (strcmp(buf + len_buf - len_dst, var.c_str()) == 0)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	// split with string
+	static std::list<string> splitWith(char* buf, char* pattern)
+	{
+		char* tmpbuf = copyBuf(buf, 2);
+		int cline = getLineCounts(tmpbuf);
+		int buflen = strlen(tmpbuf);
+		std::list<string> lines;
+		zerobufWithPattern(tmpbuf, buflen, pattern);
+
+		char* pointers[HELPER_MAX_LINE_COUNTS] = { NULL };
+		int linecount = 0;
+		for (int i = 0; i < buflen;)
+		{
+			if (tmpbuf[i] != 0)
+			{
+				pointers[linecount] = tmpbuf + i;
+				lines.push_back(pointers[linecount]);
+				linecount++;
+				i += strlen(tmpbuf + i);
+			}
+			else
+			{
+				i += 1;
+			}
+		}
+
+		delete[] tmpbuf;
+		tmpbuf = NULL;
+		return lines;
+	}
+
+
+	//split with '\r' or '\n'
+	static std::list<string> split(char* buf)
+	{
+		char* tmpbuf = copyBuf(buf, 2);
+		int cline = getLineCounts(tmpbuf);
+		int buflen = strlen(tmpbuf);
+		std::list<string> lines;
+		replace(tmpbuf, buflen, '\r', 0);
+		replace(tmpbuf, buflen, '\n', 0);
+
+		char** pointers = new char*[HELPER_MAX_LINE_COUNTS];
+		int linecount = 0;
+		for (int i = 0; i < buflen;)
+		{
+			if (tmpbuf[i] != 0)
+			{
+				pointers[linecount] = tmpbuf + i;
+				lines.push_back(pointers[linecount]);
+				linecount++;
+				i += strlen(tmpbuf + i);
+			}
+			else
+			{
+				i += 1;
+			}
+		}
+
+		delete[] tmpbuf;
+		tmpbuf = NULL;
+		return lines;
 	}
 
 	static char* load(char* filename)

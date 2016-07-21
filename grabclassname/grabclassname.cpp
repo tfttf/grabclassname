@@ -18,7 +18,9 @@ int _tmain(int argc, _TCHAR* argv[])
 #if IS_RELEASE
 	Application app;
 	app.init(argc, argv);
-	app.run();
+	//app.run();
+
+	app.runfilterWithFile("class.txt", ".cpp;.h;.lua");
 
 #else
 	

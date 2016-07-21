@@ -1,0 +1,1686 @@
+1>------ Build started: Project: libbox2d, Configuration: Debug Win32 ------
+2>------ Build started: Project: libSpine, Configuration: Debug Win32 ------
+3>------ Build started: Project: libbullet, Configuration: Debug Win32 ------
+4>------ Build started: Project: librecast, Configuration: Debug Win32 ------
+1>  b2BroadPhase.cpp
+2>  Animation.c
+2>  AnimationState.c
+2>  AnimationStateData.c
+1>  b2CollideCircle.cpp
+1>  b2CollideEdge.cpp
+2>  Atlas.c
+1>  b2CollidePolygon.cpp
+3>  btAxisSweep3.cpp
+3>  btBroadphaseProxy.cpp
+3>  btCollisionAlgorithm.cpp
+3>  btDbvt.cpp
+4>  DebugDraw.cpp
+4>  DetourDebugDraw.cpp
+4>  DetourCrowd.cpp
+4>  DetourLocalBoundary.cpp
+2>  AtlasAttachmentLoader.c
+2>  Attachment.c
+2>  AttachmentLoader.c
+2>  Bone.c
+2>  BoneData.c
+2>  BoundingBoxAttachment.c
+4>  DetourObstacleAvoidance.cpp
+2>  Event.c
+1>  b2Collision.cpp
+2>  EventData.c
+1>  b2Distance.cpp
+2>  extension.c
+3>  btDbvtBroadphase.cpp
+2>  IkConstraint.c
+2>  IkConstraintData.c
+2>  Json.c
+4>  DetourPathCorridor.cpp
+2>  MeshAttachment.c
+4>..\DetourCrowd\DetourObstacleAvoidance.cpp(334): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+4>  DetourPathQueue.cpp
+2>  RegionAttachment.c
+2>  Skeleton.c
+1>  b2DynamicTree.cpp
+2>  SkeletonBounds.c
+2>  SkeletonData.c
+4>  DetourProximityGrid.cpp
+1>  b2TimeOfImpact.cpp
+4>  DetourTileCache.cpp
+1>  b2ChainShape.cpp
+2>  SkeletonJson.c
+1>  b2CircleShape.cpp
+2>  Skin.c
+3>  btDispatcher.cpp
+2>  SkinnedMeshAttachment.c
+2>  Slot.c
+4>  DetourTileCacheBuilder.cpp
+2>  SlotData.c
+4>  DetourAlloc.cpp
+3>  btMultiSapBroadphase.cpp
+1>  b2EdgeShape.cpp
+4>  DetourCommon.cpp
+4>  DetourNavMesh.cpp
+1>  b2PolygonShape.cpp
+3>  btOverlappingPairCache.cpp
+4>  DetourNavMeshBuilder.cpp
+2>  PolygonBatch.cpp
+2>  SkeletonAnimation.cpp
+2>  SkeletonRenderer.cpp
+1>  b2BlockAllocator.cpp
+2>  spine-cocos2dx.cpp
+4>  DetourNavMeshQuery.cpp
+4>  DetourNode.cpp
+1>  b2Draw.cpp
+1>  b2Math.cpp
+3>  btQuantizedBvh.cpp
+1>  b2Settings.cpp
+3>  btSimpleBroadphase.cpp
+1>  b2StackAllocator.cpp
+1>  b2Timer.cpp
+1>  b2Body.cpp
+1>  b2ContactManager.cpp
+4>  fastlz.c
+4>  librecast.vcxproj -> D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\librecast.lib
+1>  b2Fixture.cpp
+5>------ Build started: Project: libsimulator, Configuration: Debug Win32 ------
+1>  b2Island.cpp
+3>  btActivatingCollisionAlgorithm.cpp
+3>  btBox2dBox2dCollisionAlgorithm.cpp
+3>  btBoxBoxCollisionAlgorithm.cpp
+3>  btBoxBoxDetector.cpp
+3>  btCollisionDispatcher.cpp
+3>  btCollisionObject.cpp
+3>  btCollisionWorld.cpp
+3>  btCompoundCollisionAlgorithm.cpp
+3>  btCompoundCompoundCollisionAlgorithm.cpp
+3>  btConvex2dConvex2dAlgorithm.cpp
+3>  btConvexConcaveCollisionAlgorithm.cpp
+3>  btConvexConvexAlgorithm.cpp
+3>  btConvexPlaneCollisionAlgorithm.cpp
+3>  btDefaultCollisionConfiguration.cpp
+3>  btEmptyCollisionAlgorithm.cpp
+3>  btGhostObject.cpp
+3>  btHashedSimplePairCache.cpp
+3>  btInternalEdgeUtility.cpp
+3>  btManifoldResult.cpp
+3>  btSimulationIslandManager.cpp
+5>  CCHTTPRequest.cpp
+5>  DeviceEx-win32.cpp
+5>  PlayerEditBoxServiceWin.cpp
+5>  PlayerFileDialogServiceWin.cpp
+1>  b2World.cpp
+1>  b2WorldCallbacks.cpp
+1>  b2ChainAndCircleContact.cpp
+1>  b2ChainAndPolygonContact.cpp
+1>  b2CircleContact.cpp
+1>  b2Contact.cpp
+1>  b2ContactSolver.cpp
+1>  b2EdgeAndCircleContact.cpp
+1>  b2EdgeAndPolygonContact.cpp
+1>  b2PolygonAndCircleContact.cpp
+1>  b2PolygonContact.cpp
+1>  b2DistanceJoint.cpp
+5>  PlayerMenuServiceWin.cpp
+1>  b2FrictionJoint.cpp
+1>  b2GearJoint.cpp
+1>  b2Joint.cpp
+1>  b2MotorJoint.cpp
+1>  b2MouseJoint.cpp
+1>  b2PrismaticJoint.cpp
+1>  b2PulleyJoint.cpp
+1>  b2RevoluteJoint.cpp
+1>  b2RopeJoint.cpp
+1>  b2WeldJoint.cpp
+1>  b2WheelJoint.cpp
+3>  btSphereBoxCollisionAlgorithm.cpp
+3>  btSphereSphereCollisionAlgorithm.cpp
+1>  b2Rope.cpp
+3>  btSphereTriangleCollisionAlgorithm.cpp
+3>  btUnionFind.cpp
+3>  SphereTriangleDetector.cpp
+3>  btBox2dShape.cpp
+3>  btBoxShape.cpp
+3>  btBvhTriangleMeshShape.cpp
+3>  btCapsuleShape.cpp
+3>  btCollisionShape.cpp
+3>  btCompoundShape.cpp
+3>  btConcaveShape.cpp
+3>  btConeShape.cpp
+3>  btConvex2dShape.cpp
+3>  btConvexHullShape.cpp
+3>  btConvexInternalShape.cpp
+3>  btConvexPointCloudShape.cpp
+3>  btConvexPolyhedron.cpp
+3>  btConvexShape.cpp
+3>  btConvexTriangleMeshShape.cpp
+3>  btCylinderShape.cpp
+3>  btEmptyShape.cpp
+3>  btHeightfieldTerrainShape.cpp
+3>  btMinkowskiSumShape.cpp
+3>  btMultimaterialTriangleMeshShape.cpp
+3>  btMultiSphereShape.cpp
+3>  btOptimizedBvh.cpp
+3>  btPolyhedralConvexShape.cpp
+3>  btScaledBvhTriangleMeshShape.cpp
+3>  btShapeHull.cpp
+3>  btSphereShape.cpp
+3>  btStaticPlaneShape.cpp
+3>  btStridingMeshInterface.cpp
+3>  btTetrahedronShape.cpp
+2>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support\spine\skeletonrenderer.cpp(252): warning C4996: 'cocos2d::DrawPrimitives::setDrawColor4B': was declared deprecated
+2>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d\ccdrawingprimitives.h(245) : see declaration of 'cocos2d::DrawPrimitives::setDrawColor4B'
+2>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support\spine\skeletonrenderer.cpp(265): warning C4996: 'cocos2d::DrawPrimitives::drawPoly': was declared deprecated
+2>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d\ccdrawingprimitives.h(142) : see declaration of 'cocos2d::DrawPrimitives::drawPoly'
+2>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support\spine\skeletonrenderer.cpp(271): warning C4996: 'cocos2d::DrawPrimitives::setDrawColor4B': was declared deprecated
+2>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d\ccdrawingprimitives.h(245) : see declaration of 'cocos2d::DrawPrimitives::setDrawColor4B'
+2>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support\spine\skeletonrenderer.cpp(276): warning C4996: 'cocos2d::DrawPrimitives::drawLine': was declared deprecated
+2>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d\ccdrawingprimitives.h(115) : see declaration of 'cocos2d::DrawPrimitives::drawLine'
+2>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support\spine\skeletonrenderer.cpp(279): warning C4996: 'cocos2d::DrawPrimitives::setPointSize': was declared deprecated
+2>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d\ccdrawingprimitives.h(263) : see declaration of 'cocos2d::DrawPrimitives::setPointSize'
+2>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support\spine\skeletonrenderer.cpp(280): warning C4996: 'cocos2d::DrawPrimitives::setDrawColor4B': was declared deprecated
+2>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d\ccdrawingprimitives.h(245) : see declaration of 'cocos2d::DrawPrimitives::setDrawColor4B'
+2>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support\spine\skeletonrenderer.cpp(283): warning C4996: 'cocos2d::DrawPrimitives::drawPoint': was declared deprecated
+2>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d\ccdrawingprimitives.h(100) : see declaration of 'cocos2d::DrawPrimitives::drawPoint'
+2>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support\spine\skeletonrenderer.cpp(284): warning C4996: 'cocos2d::DrawPrimitives::setDrawColor4B': was declared deprecated
+2>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d\ccdrawingprimitives.h(245) : see declaration of 'cocos2d::DrawPrimitives::setDrawColor4B'
+3>  btTriangleBuffer.cpp
+3>  btTriangleCallback.cpp
+3>  btTriangleIndexVertexArray.cpp
+3>  btTriangleIndexVertexMaterialArray.cpp
+3>  btTriangleMesh.cpp
+3>  btTriangleMeshShape.cpp
+3>  btUniformScalingShape.cpp
+3>  btContactProcessing.cpp
+3>  btGenericPoolAllocator.cpp
+3>  btGImpactBvh.cpp
+3>  btGImpactCollisionAlgorithm.cpp
+3>  btGImpactQuantizedBvh.cpp
+3>  btGImpactShape.cpp
+3>  btTriangleShapeEx.cpp
+3>  gim_box_set.cpp
+3>  gim_contact.cpp
+3>  gim_memory.cpp
+3>  gim_tri_collision.cpp
+3>  btContinuousConvexCollision.cpp
+3>  btConvexCast.cpp
+3>  btGjkConvexCast.cpp
+3>  btGjkEpa2.cpp
+3>  btGjkEpaPenetrationDepthSolver.cpp
+3>  btGjkPairDetector.cpp
+3>  btMinkowskiPenetrationDepthSolver.cpp
+3>  btPersistentManifold.cpp
+3>  btPolyhedralContactClipping.cpp
+3>  btRaycastCallback.cpp
+3>  btSubSimplexConvexCast.cpp
+3>  btVoronoiSimplexSolver.cpp
+3>  btKinematicCharacterController.cpp
+3>  btConeTwistConstraint.cpp
+3>  btContactConstraint.cpp
+3>  btFixedConstraint.cpp
+3>  btGearConstraint.cpp
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletdynamics\character\btkinematiccharactercontroller.cpp(137): warning C4305: '=' : truncation from 'double' to 'btScalar'
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletdynamics\character\btkinematiccharactercontroller.cpp(148): warning C4305: '=' : truncation from 'double' to 'btScalar'
+3>  btGeneric6DofConstraint.cpp
+3>  btGeneric6DofSpringConstraint.cpp
+3>  btHinge2Constraint.cpp
+3>  btHingeConstraint.cpp
+3>  btPoint2PointConstraint.cpp
+3>  btSequentialImpulseConstraintSolver.cpp
+3>  btSliderConstraint.cpp
+3>  btSolve2LinearConstraint.cpp
+3>  btTypedConstraint.cpp
+3>  btUniversalConstraint.cpp
+3>  btDiscreteDynamicsWorld.cpp
+3>  btRigidBody.cpp
+3>  btSimpleDynamicsWorld.cpp
+3>  Bullet-C-API.cpp
+3>  btMultiBody.cpp
+3>  btMultiBodyConstraint.cpp
+3>  btMultiBodyConstraintSolver.cpp
+3>  btMultiBodyDynamicsWorld.cpp
+3>  btMultiBodyJointLimitConstraint.cpp
+3>  btMultiBodyJointMotor.cpp
+3>  btMultiBodyPoint2Point.cpp
+3>  btDantzigLCP.cpp
+3>  btMLCPSolver.cpp
+3>  btRaycastVehicle.cpp
+3>  btWheelInfo.cpp
+3>  btGpu3DGridBroadphase.cpp
+3>  btParallelConstraintSolver.cpp
+3>  btThreadSupportInterface.cpp
+3>  PosixThreadSupport.cpp
+3>  SequentialThreadSupport.cpp
+3>  SpuCollisionObjectWrapper.cpp
+3>  SpuCollisionTaskProcess.cpp
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletmultithreaded\btparallelconstraintsolver.cpp(1141): warning C4316: 'btConstraintSolverIO' : object allocated on the heap may not be aligned 16
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletmultithreaded\btparallelconstraintsolver.cpp(1484): warning C4305: 'initializing' : truncation from 'double' to 'float'
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletmultithreaded\sequentialthreadsupport.cpp(180): warning C4316: 'btDummyCriticalSection' : object allocated on the heap may not be aligned 16
+3>  SpuContactManifoldCollisionAlgorithm.cpp
+3>  SpuFakeDma.cpp
+3>  SpuGatheringCollisionDispatcher.cpp
+3>  SpuLibspe2Support.cpp
+3>  boxBoxDistance.cpp
+3>  SpuCollisionShapes.cpp
+3>  SpuContactResult.cpp
+3>  SpuGatheringCollisionTask.cpp
+3>  SpuMinkowskiPenetrationDepthSolver.cpp
+3>  SpuSampleTaskProcess.cpp
+3>  SpuSampleTask.cpp
+3>  Win32ThreadSupport.cpp
+3>  btAlignedAllocator.cpp
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletmultithreaded\spusampletask\spusampletask.cpp(226): warning C4316: 'SampleTask_LocalStoreMemory' : object allocated on the heap may not be aligned 16
+3>  btConvexHull.cpp
+3>  btConvexHullComputer.cpp
+3>  btGeometryUtil.cpp
+3>  btPolarDecomposition.cpp
+3>  btQuickprof.cpp
+3>  btSerializer.cpp
+3>  btVector3.cpp
+3>  MiniCL.cpp
+3>  MiniCLTaskScheduler.cpp
+5>  PlayerMessageBoxServiceWin.cpp
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletmultithreaded\win32threadsupport.cpp(253): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+3>          c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletmultithreaded\win32threadsupport.cpp(262): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+3>          c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+3>  MiniCLTask.cpp
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\minicl\minicl.cpp(83): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+3>          c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\minicl\minicl.cpp(96): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+3>          c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\minicl\minicl.cpp(129): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+3>          c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\minicl\minicl.cpp(194): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+3>          c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\minicl\minicl.cpp(207): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+3>          c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\minicl\minicl.cpp(166): warning C4101: 'workitem_size' : unreferenced local variable
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\minicl\minicl.cpp(547): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+3>          c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+3>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\minicl\minicl.cpp(640): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+3>          c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+5>  PlayerTaskServiceWin.cpp
+3>PosixThreadSupport.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+3>btBroadphaseProxy.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+5>  PlayerWin.cpp
+3>  libbullet.vcxproj -> D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\libbullet.lib
+2>  libSpine.vcxproj -> D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\libSpine.lib
+5>  ProjectConfig.cpp
+5>..\lib\ProjectConfig\ProjectConfig.cpp(661): warning C4018: '>=' : signed/unsigned mismatch
+5>  SimulatorConfig.cpp
+5>  AppEvent.cpp
+5>  AppLang.cpp
+5>  PlayerMenuServiceProtocol.cpp
+5>  PlayerProtocol.cpp
+5>  PlayerServiceProtocol.cpp
+5>  PlayerSettings.cpp
+5>  PlayerTaskServiceProtocol.cpp
+5>  PlayerUtils.cpp
+5>  extension_set.cc
+5>  generated_message_util.cc
+5>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (..\lib\protobuf-lite\google\protobuf\extension_set.cc)
+5>          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(785) : see reference to function template instantiation '_OutIt std::copy<const Element[],Element[]>(_InIt,_InIt,_OutIt)' being compiled
+5>          with
+5>          [
+5>              _OutIt=google::protobuf::uint64 []
+5>  ,            Element=google::protobuf::uint64
+5>  ,            _InIt=const google::protobuf::uint64 []
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(784) : while compiling class template member function 'void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)'
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(777) : see reference to function template instantiation 'void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(777) : see reference to class template instantiation 'google::protobuf::internal::ElementCopier<Element,false>' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(776) : while compiling class template member function 'void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)'
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(677) : see reference to function template instantiation 'void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(303) : see reference to function template instantiation 'bool google::protobuf::internal::WireFormatLite::ReadRepeatedFixedSizePrimitive<google::protobuf::uint64,TYPE_FIXED64>(int,google::protobuf::uint32,google::protobuf::io::CodedInputStream *,google::protobuf::RepeatedField<google::protobuf::uint64> *)' being compiled
+5>          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+5>  coded_stream.cc
+5>  zero_copy_stream.cc
+5>  zero_copy_stream_impl_lite.cc
+5>  message_lite.cc
+5>..\lib\protobuf-lite\google\protobuf\io\zero_copy_stream_impl_lite.cc(157): warning C4018: '<' : signed/unsigned mismatch
+5>..\lib\protobuf-lite\google\protobuf\io\zero_copy_stream_impl_lite.cc(177): warning C4018: '<=' : signed/unsigned mismatch
+5>  repeated_field.cc
+5>  atomicops_internals_x86_gcc.cc
+5>  atomicops_internals_x86_msvc.cc
+5>  common.cc
+5>..\lib\protobuf-lite\google\protobuf\stubs\common.cc(377): warning C4018: '<' : signed/unsigned mismatch
+5>  once.cc
+5>  stringprintf.cc
+5>..\lib\protobuf-lite\google\protobuf\stubs\stringprintf.cc(152): warning C4018: '<' : signed/unsigned mismatch
+5>  wire_format_lite.cc
+5>  ConfigParser.cpp
+5>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (..\lib\protobuf-lite\google\protobuf\wire_format_lite.cc)
+5>          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(785) : see reference to function template instantiation '_OutIt std::copy<const Element[],Element[]>(_InIt,_InIt,_OutIt)' being compiled
+5>          with
+5>          [
+5>              _OutIt=google::protobuf::uint64 []
+5>  ,            Element=google::protobuf::uint64
+5>  ,            _InIt=const google::protobuf::uint64 []
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(784) : while compiling class template member function 'void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)'
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(777) : see reference to function template instantiation 'void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(777) : see reference to class template instantiation 'google::protobuf::internal::ElementCopier<Element,false>' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(776) : while compiling class template member function 'void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)'
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(771) : see reference to function template instantiation 'void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(770) : while compiling class template member function 'void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element [],Element [],int)'
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(757) : see reference to function template instantiation 'void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element [],Element [],int)' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(749) : while compiling class template member function 'void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)'
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(631) : see reference to function template instantiation 'void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)' being compiled
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(590) : while compiling class template member function 'int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const'
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(270) : see reference to function template instantiation 'int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const' being compiled
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(250) : see reference to class template instantiation 'google::protobuf::RepeatedField<google::protobuf::uint64>' being compiled
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(303) : see reference to function template instantiation 'bool google::protobuf::internal::WireFormatLite::ReadRepeatedFixedSizePrimitive<google::protobuf::uint64,TYPE_FIXED64>(int,google::protobuf::uint32,google::protobuf::io::CodedInputStream *,google::protobuf::RepeatedField<google::protobuf::uint64> *)' being compiled
+5>          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+5>  ConnectWaitLayer.cpp
+5>  ConsoleCommand.cpp
+5>  FileServer.cpp
+5>..\lib\runtime\ConfigParser.cpp(110): warning C4018: '<' : signed/unsigned mismatch
+5>  Landscape_png.cpp
+5>  PlayDisable_png.cpp
+5>  PlayEnable_png.cpp
+5>  Portrait_png.cpp
+5>  Protos.pb.cc
+5>  Runtime.cpp
+5>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (..\lib\runtime\Protos.pb.cc)
+5>          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(785) : see reference to function template instantiation '_OutIt std::copy<const Element[],Element[]>(_InIt,_InIt,_OutIt)' being compiled
+5>          with
+5>          [
+5>              _OutIt=google::protobuf::uint64 []
+5>  ,            Element=google::protobuf::uint64
+5>  ,            _InIt=const google::protobuf::uint64 []
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(784) : while compiling class template member function 'void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)'
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(777) : see reference to function template instantiation 'void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(777) : see reference to class template instantiation 'google::protobuf::internal::ElementCopier<Element,false>' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(776) : while compiling class template member function 'void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)'
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(771) : see reference to function template instantiation 'void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(770) : while compiling class template member function 'void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element [],Element [],int)'
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(757) : see reference to function template instantiation 'void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element [],Element [],int)' being compiled
+5>          with
+5>          [
+5>              Element=google::protobuf::uint64
+5>          ]
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(749) : while compiling class template member function 'void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)'
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(631) : see reference to function template instantiation 'void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)' being compiled
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/repeated_field.h(590) : while compiling class template member function 'int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const'
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(270) : see reference to function template instantiation 'int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const' being compiled
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(250) : see reference to class template instantiation 'google::protobuf::RepeatedField<google::protobuf::uint64>' being compiled
+5>          D:\mygit\luabindtest\frameworks\cocos2d-x\tools\simulator\libsimulator\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(303) : see reference to function template instantiation 'bool google::protobuf::internal::WireFormatLite::ReadRepeatedFixedSizePrimitive<google::protobuf::uint64,TYPE_FIXED64>(int,google::protobuf::uint32,google::protobuf::io::CodedInputStream *,google::protobuf::RepeatedField<google::protobuf::uint64> *)' being compiled
+5>          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+5>  RuntimeCCSImpl.cpp
+5>  RuntimeProtocol.cpp
+5>  Shine_png.cpp
+5>  VisibleRect.cpp
+5>  Runtime_win32.cpp
+5>  stdafx.cpp
+1>  libbox2d.vcxproj -> D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\libbox2d.lib
+6>------ Build started: Project: libcocos2d, Configuration: Debug Win32 ------
+5>PlayDisable_png.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+5>atomicops_internals_x86_gcc.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+5>PlayerUtils.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+5>PlayerSettings.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+5>PlayerServiceProtocol.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+5>  libsimulator.vcxproj -> D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\libsimulator.lib
+6>  AssetsManager.cpp
+6>  AssetsManagerEx.cpp
+6>  CCEventAssetsManagerEx.cpp
+6>  CCEventListenerAssetsManagerEx.cpp
+6>  Manifest.cpp
+6>  CCControl.cpp
+6>  CCControlButton.cpp
+6>  CCControlColourPicker.cpp
+6>  CCControlHuePicker.cpp
+6>  CCControlPotentiometer.cpp
+6>  CCControlSaturationBrightnessPicker.cpp
+6>  CCControlSlider.cpp
+6>  CCControlStepper.cpp
+6>  CCControlSwitch.cpp
+6>  CCControlUtils.cpp
+6>  CCInvocation.cpp
+6>  CCScrollView.cpp
+6>  CCTableView.cpp
+6>  CCTableViewCell.cpp
+6>  CCParticle3DAffector.cpp
+6>  CCParticle3DEmitter.cpp
+6>  CCParticle3DRender.cpp
+6>  CCParticleSystem3D.cpp
+6>  CCPUAffector.cpp
+6>  CCPUAffectorManager.cpp
+6>  CCPUAffectorTranslator.cpp
+6>  CCPUAlignAffector.cpp
+6>  CCPUAlignAffectorTranslator.cpp
+6>  CCPUBaseCollider.cpp
+6>  CCPUBaseColliderTranslator.cpp
+6>  CCPUBaseForceAffector.cpp
+6>  CCPUBaseForceAffectorTranslator.cpp
+6>  CCPUBeamRender.cpp
+6>  CCPUBehaviour.cpp
+6>  CCPUBehaviourManager.cpp
+6>  CCPUBehaviourTranslator.cpp
+6>  CCPUBillboardChain.cpp
+6>  CCPUBoxCollider.cpp
+6>  CCPUBoxColliderTranslator.cpp
+6>  CCPUBoxEmitter.cpp
+6>  CCPUBoxEmitterTranslator.cpp
+6>  CCPUCircleEmitter.cpp
+6>  CCPUCircleEmitterTranslator.cpp
+6>  CCPUCollisionAvoidanceAffector.cpp
+6>  CCPUCollisionAvoidanceAffectorTranslator.cpp
+6>  CCPUColorAffector.cpp
+6>  CCPUColorAffectorTranslator.cpp
+6>  CCPUDoAffectorEventHandler.cpp
+6>  CCPUDoAffectorEventHandlerTranslator.cpp
+6>  CCPUDoEnableComponentEventHandler.cpp
+6>  CCPUDoEnableComponentEventHandlerTranslator.cpp
+6>  CCPUDoExpireEventHandler.cpp
+6>  CCPUDoExpireEventHandlerTranslator.cpp
+6>  CCPUDoFreezeEventHandler.cpp
+6>  CCPUDoFreezeEventHandlerTranslator.cpp
+6>  CCPUDoPlacementParticleEventHandler.cpp
+6>  CCPUDoPlacementParticleEventHandlerTranslator.cpp
+6>  CCPUDoScaleEventHandler.cpp
+6>  CCPUDoScaleEventHandlerTranslator.cpp
+6>  CCPUDoStopSystemEventHandler.cpp
+6>  CCPUDoStopSystemEventHandlerTranslator.cpp
+6>  CCPUDynamicAttribute.cpp
+6>  CCPUDynamicAttributeTranslator.cpp
+6>  CCPUEmitter.cpp
+6>  CCPUEmitterManager.cpp
+6>  CCPUEmitterTranslator.cpp
+6>  CCPUEventHandler.cpp
+6>  CCPUEventHandlerManager.cpp
+6>  CCPUEventHandlerTranslator.cpp
+6>  CCPUFlockCenteringAffector.cpp
+6>  CCPUFlockCenteringAffectorTranslator.cpp
+6>  CCPUForceField.cpp
+6>  CCPUForceFieldAffector.cpp
+6>  CCPUForceFieldAffectorTranslator.cpp
+6>  CCPUGeometryRotator.cpp
+6>  CCPUGeometryRotatorTranslator.cpp
+6>  CCPUGravityAffector.cpp
+6>  CCPUGravityAffectorTranslator.cpp
+6>  CCPUInterParticleCollider.cpp
+6>  CCPUInterParticleColliderTranslator.cpp
+6>  CCPUJetAffector.cpp
+6>  CCPUJetAffectorTranslator.cpp
+6>  CCPULineAffector.cpp
+6>  CCPULineAffectorTranslator.cpp
+6>  CCPULinearForceAffector.cpp
+6>  CCPULinearForceAffectorTranslator.cpp
+6>  CCPULineEmitter.cpp
+6>  CCPULineEmitterTranslator.cpp
+6>  CCPUListener.cpp
+6>  CCPUMaterialManager.cpp
+6>  CCPUMaterialTranslator.cpp
+6>  CCPUMeshSurfaceEmitter.cpp
+6>  CCPUMeshSurfaceEmitterTranslator.cpp
+6>  CCPUNoise.cpp
+6>  CCPUObserver.cpp
+6>  CCPUObserverManager.cpp
+6>  CCPUObserverTranslator.cpp
+6>  CCPUOnClearObserver.cpp
+6>  CCPUOnClearObserverTranslator.cpp
+6>  CCPUOnCollisionObserver.cpp
+6>  CCPUOnCollisionObserverTranslator.cpp
+6>  CCPUOnCountObserver.cpp
+6>  CCPUOnCountObserverTranslator.cpp
+6>  CCPUOnEmissionObserver.cpp
+6>  CCPUOnEmissionObserverTranslator.cpp
+6>  CCPUOnEventFlagObserver.cpp
+6>  CCPUOnEventFlagObserverTranslator.cpp
+6>  CCPUOnExpireObserver.cpp
+6>  CCPUOnExpireObserverTranslator.cpp
+6>  CCPUOnPositionObserver.cpp
+6>  CCPUOnPositionObserverTranslator.cpp
+6>  CCPUOnQuotaObserver.cpp
+6>  CCPUOnQuotaObserverTranslator.cpp
+6>  CCPUOnRandomObserver.cpp
+6>  CCPUOnRandomObserverTranslator.cpp
+6>  CCPUOnTimeObserver.cpp
+6>  CCPUOnTimeObserverTranslator.cpp
+6>  CCPUOnVelocityObserver.cpp
+6>  CCPUOnVelocityObserverTranslator.cpp
+6>  CCPUParticleFollower.cpp
+6>  CCPUParticleFollowerTranslator.cpp
+6>  CCPUParticleSystem3D.cpp
+6>  CCPUParticleSystem3DTranslator.cpp
+6>  CCPUPathFollower.cpp
+6>  CCPUPathFollowerTranslator.cpp
+6>  CCPUPlane.cpp
+6>  CCPUPlaneCollider.cpp
+6>  CCPUPlaneColliderTranslator.cpp
+6>  CCPUPointEmitter.cpp
+6>  CCPUPointEmitterTranslator.cpp
+6>  CCPUPositionEmitter.cpp
+6>  CCPUPositionEmitterTranslator.cpp
+6>  CCPURandomiser.cpp
+6>  CCPURandomiserTranslator.cpp
+6>  CCPURender.cpp
+6>  CCPURendererTranslator.cpp
+6>  CCPURibbonTrail.cpp
+6>  CCPURibbonTrailRender.cpp
+6>  CCPUScaleAffector.cpp
+6>  CCPUScaleAffectorTranslator.cpp
+6>  CCPUScaleVelocityAffector.cpp
+6>  CCPUScaleVelocityAffectorTranslator.cpp
+6>  CCPUScriptCompiler.cpp
+6>  CCPUScriptLexer.cpp
+6>  CCPUScriptParser.cpp
+6>  CCPUScriptTranslator.cpp
+6>  CCPUSimpleSpline.cpp
+6>  CCPUSineForceAffector.cpp
+6>  CCPUSineForceAffectorTranslator.cpp
+6>  CCPUSlaveBehaviour.cpp
+6>  CCPUSlaveBehaviourTranslator.cpp
+6>  CCPUSlaveEmitter.cpp
+6>  CCPUSlaveEmitterTranslator.cpp
+6>  CCPUSphere.cpp
+6>  CCPUSphereCollider.cpp
+6>  CCPUSphereColliderTranslator.cpp
+6>  CCPUSphereSurfaceEmitter.cpp
+6>  CCPUSphereSurfaceEmitterTranslator.cpp
+6>  CCPUTechniqueTranslator.cpp
+6>  CCPUTextureAnimator.cpp
+6>  CCPUTextureAnimatorTranslator.cpp
+6>  CCPUTextureRotator.cpp
+6>  CCPUTextureRotatorTranslator.cpp
+6>  CCPUTranslateManager.cpp
+6>  CCPUUtil.cpp
+6>  CCPUVelocityMatchingAffector.cpp
+6>  CCPUVelocityMatchingAffectorTranslator.cpp
+6>  CCPUVertexEmitter.cpp
+6>  CCPUVortexAffector.cpp
+6>  CCPUVortexAffectorTranslator.cpp
+6>  CCPhysicsDebugNode.cpp
+6>  CCPhysicsSprite.cpp
+6>  clipper.cpp
+6>  ConvertUTF.c
+6>  ConvertUTFWrapper.cpp
+6>  edtaa3func.cpp
+6>  flatc.cpp
+6>  idl_gen_cpp.cpp
+6>  idl_gen_fbs.cpp
+6>  idl_gen_general.cpp
+6>  idl_gen_go.cpp
+6>  idl_gen_text.cpp
+6>  idl_parser.cpp
+6>  shapes.cc
+6>  advancing_front.cc
+6>  cdt.cc
+6>  sweep.cc
+6>  sweep_context.cc
+6>  tinyxml2.cpp
+6>  ioapi_mem.cpp
+6>  ioapi.cpp
+6>  unzip.cpp
+6>  xxhash.c
+6>  CCAABB.cpp
+6>..\..\external\xxhash\xxhash.c(312): warning C4804: '/' : unsafe use of type 'bool' in operation
+6>  CCAnimate3D.cpp
+6>  CCAnimation3D.cpp
+6>  CCAttachNode.cpp
+6>  CCBillBoard.cpp
+6>  CCBundle3D.cpp
+6>  CCBundleReader.cpp
+6>  CCFrustum.cpp
+6>  CCMesh.cpp
+6>  CCMeshSkin.cpp
+6>  CCMeshVertexIndexData.cpp
+6>  CCMotionStreak3D.cpp
+6>  CCOBB.cpp
+6>  CCObjLoader.cpp
+6>  CCPlane.cpp
+6>  CCRay.cpp
+6>  CCSkeleton3D.cpp
+6>  CCSkybox.cpp
+6>  CCSprite3D.cpp
+6>  CCSprite3DMaterial.cpp
+6>  CCTerrain.cpp
+6>..\3d\CCSprite3D.cpp(467): warning C4018: '<' : signed/unsigned mismatch
+6>..\3d\CCSprite3D.cpp(777): warning C4804: '>' : unsafe use of type 'bool' in operation
+6>  AudioEngine.cpp
+6>  AudioCache.cpp
+6>  AudioEngine-win32.cpp
+6>  AudioPlayer.cpp
+6>  MciPlayer.cpp
+6>  SimpleAudioEngine.cpp
+6>  CCAllocatorDiagnostics.cpp
+6>  CCAllocatorGlobal.cpp
+6>  CCAllocatorGlobalNewDelete.cpp
+6>  atitc.cpp
+6>  base64.cpp
+6>  CCAsyncTaskPool.cpp
+6>  CCAutoreleasePool.cpp
+6>  ccCArray.cpp
+6>  CCConfiguration.cpp
+6>  CCConsole.cpp
+6>  CCData.cpp
+6>  CCDataVisitor.cpp
+6>  CCDirector.cpp
+6>  CCEvent.cpp
+6>  CCEventAcceleration.cpp
+6>  CCEventCustom.cpp
+6>  CCEventDispatcher.cpp
+6>  CCEventFocus.cpp
+6>  CCEventKeyboard.cpp
+6>  CCEventListener.cpp
+6>  CCEventListenerAcceleration.cpp
+6>  CCEventListenerCustom.cpp
+6>  CCEventListenerFocus.cpp
+6>  CCEventListenerKeyboard.cpp
+6>  CCEventListenerMouse.cpp
+6>  CCEventListenerTouch.cpp
+6>  CCEventMouse.cpp
+6>  CCEventTouch.cpp
+6>  ccFPSImages.c
+6>  CCIMEDispatcher.cpp
+6>  CCNinePatchImageParser.cpp
+6>  CCStencilStateManager.cpp
+6>  CCNS.cpp
+6>  CCProfiling.cpp
+6>  CCProperties.cpp
+6>  ccRandom.cpp
+6>  CCRef.cpp
+6>  CCScheduler.cpp
+6>  CCScriptSupport.cpp
+6>  CCTouch.cpp
+6>  ccTypes.cpp
+6>  CCUserDefault.cpp
+6>  ccUTF8.cpp
+6>  ccUtils.cpp
+6>..\base\ccUTF8.cpp(414): warning C4996: 'cocos2d::cc_wcslen': was declared deprecated
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\base/ccUTF8.h(213) : see declaration of 'cocos2d::cc_wcslen'
+6>..\base\ccUTF8.cpp(457): warning C4996: 'cocos2d::cc_wcslen': was declared deprecated
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\base/ccUTF8.h(213) : see declaration of 'cocos2d::cc_wcslen'
+6>  CCValue.cpp
+6>  etc1.cpp
+6>  pvr.cpp
+6>  ObjectFactory.cpp
+6>  s3tc.cpp
+6>  TGAlib.cpp
+6>  ZipUtils.cpp
+6>  cocos2d.cpp
+6>  CCArray.cpp
+6>  CCDeprecated.cpp
+6>  CCDictionary.cpp
+6>  CCNotificationCenter.cpp
+6>  CCSet.cpp
+6>  CCString.cpp
+6>  CCBAnimationManager.cpp
+6>  CCBFileLoader.cpp
+6>  CCBKeyframe.cpp
+6>  CCBReader.cpp
+6>  CCBSequence.cpp
+6>  CCBSequenceProperty.cpp
+6>  CCControlButtonLoader.cpp
+6>  CCControlLoader.cpp
+6>  CCLabelBMFontLoader.cpp
+6>  CCLabelTTFLoader.cpp
+6>  CCLayerColorLoader.cpp
+6>  CCLayerGradientLoader.cpp
+6>  CCLayerLoader.cpp
+6>  CCMenuItemImageLoader.cpp
+6>  CCMenuItemLoader.cpp
+6>  CCNode+CCBRelativePositioning.cpp
+6>  CCNodeLoader.cpp
+6>  CCNodeLoaderLibrary.cpp
+6>  CCParticleSystemQuadLoader.cpp
+6>  CCScale9SpriteLoader.cpp
+6>  CCScrollViewLoader.cpp
+6>  CCSpriteLoader.cpp
+6>  CCActionTimeline.cpp
+6>  CCActionTimelineCache.cpp
+6>  CCActionTimelineNode.cpp
+6>  CCBoneNode.cpp
+6>  CCFrame.cpp
+6>  CCSkeletonNode.cpp
+6>  CCSkinNode.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\ActionTimeline\CCActionTimelineCache.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\ActionTimeline\CCActionTimelineCache.cpp)
+6>  CCTimeLine.cpp
+6>  CSLoader.cpp
+6>  CCActionFrame.cpp
+6>  CCActionFrameEasing.cpp
+6>  CCActionManagerEx.cpp
+6>  CCActionNode.cpp
+6>  CCActionObject.cpp
+6>  CCArmature.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\ActionTimeline\CSLoader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\ActionTimeline\CSLoader.cpp)
+6>  CCArmatureAnimation.cpp
+6>  CCArmatureDataManager.cpp
+6>  CCArmatureDefine.cpp
+6>  CCBatchNode.cpp
+6>  CCBone.cpp
+6>  CCColliderDetector.cpp
+6>  CCComAttribute.cpp
+6>  CCComAudio.cpp
+6>  CCComController.cpp
+6>  CCComRender.cpp
+6>  CCDataReaderHelper.cpp
+6>  CCDatas.cpp
+6>  CCDecorativeDisplay.cpp
+6>..\editor-support\cocostudio\CCDataReaderHelper.cpp(309): warning C4996: 'cocos2d::FileUtils::getFileData': was declared deprecated
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+6>..\editor-support\cocostudio\CCDataReaderHelper.cpp(422): warning C4996: 'cocos2d::FileUtils::getFileData': was declared deprecated
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+6>  CCDisplayFactory.cpp
+6>  CCDisplayManager.cpp
+6>  CCInputDelegate.cpp
+6>  CCComExtensionData.cpp
+6>  CCProcessBase.cpp
+6>  CCSGUIReader.cpp
+6>  CCSkin.cpp
+6>  CCSpriteFrameCacheHelper.cpp
+6>  CCSSceneReader.cpp
+6>  CCTransformHelp.cpp
+6>  CCTween.cpp
+6>  CCUtilMath.cpp
+6>  CocoLoader.cpp
+6>  CocoStudio.cpp
+6>  DictionaryHelper.cpp
+6>  FlatBuffersSerialize.cpp
+6>  LocalizationManager.cpp
+6>  TriggerBase.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\FlatBuffersSerialize.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\FlatBuffersSerialize.cpp)
+6>  TriggerMng.cpp
+6>  TriggerObj.cpp
+6>  WidgetCallBackHandlerProtocol.cpp
+6>  ArmatureNodeReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ArmatureNodeReader\ArmatureNodeReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ArmatureNodeReader\ArmatureNodeReader.cpp)
+6>  ButtonReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ButtonReader\ButtonReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ButtonReader\ButtonReader.cpp)
+6>  CheckBoxReader.cpp
+6>  ComAudioReader.cpp
+6>  GameMapReader.cpp
+6>  GameNode3DReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ComAudioReader\ComAudioReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ComAudioReader\ComAudioReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\CheckBoxReader\CheckBoxReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\CheckBoxReader\CheckBoxReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\GameMapReader\GameMapReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\GameMapReader\GameMapReader.cpp)
+6>  ImageViewReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ImageViewReader\ImageViewReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ImageViewReader\ImageViewReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\GameNode3DReader\GameNode3DReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\GameNode3DReader\GameNode3DReader.cpp)
+6>  LayoutReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\LayoutReader\LayoutReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\LayoutReader\LayoutReader.cpp)
+6>  Light3DReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\Light3DReader\Light3DReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\Light3DReader\Light3DReader.cpp)
+6>..\editor-support\cocostudio\WidgetReader\Light3DReader\Light3DReader.cpp(164): warning C4800: 'uint8_t' : forcing value to bool 'true' or 'false' (performance warning)
+6>  ListViewReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ListViewReader\ListViewReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ListViewReader\ListViewReader.cpp)
+6>  LoadingBarReader.cpp
+6>  NodeReaderDefine.cpp
+6>  NodeReaderProtocol.cpp
+6>  NodeReader.cpp
+6>  PageViewReader.cpp
+6>  ParticleReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\LoadingBarReader\LoadingBarReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\LoadingBarReader\LoadingBarReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ParticleReader\ParticleReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ParticleReader\ParticleReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\PageViewReader\PageViewReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\PageViewReader\PageViewReader.cpp)
+6>  ProjectNodeReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ProjectNodeReader\ProjectNodeReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ProjectNodeReader\ProjectNodeReader.cpp)
+6>  ScrollViewReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\NodeReader\NodeReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\NodeReader\NodeReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ScrollViewReader\ScrollViewReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\ScrollViewReader\ScrollViewReader.cpp)
+6>  SingleNodeReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SingleNodeReader\SingleNodeReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SingleNodeReader\SingleNodeReader.cpp)
+6>  BoneNodeReader.cpp
+6>  SkeletonNodeReader.cpp
+6>  SliderReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SliderReader\SliderReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SliderReader\SliderReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SkeletonReader\BoneNodeReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SkeletonReader\BoneNodeReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SkeletonReader\SkeletonNodeReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SkeletonReader\SkeletonNodeReader.cpp)
+6>  SpriteReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SpriteReader\SpriteReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\SpriteReader\SpriteReader.cpp)
+6>  TabControlReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TabControlReader\TabControlReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TabControlReader\TabControlReader.cpp)
+6>  TextAtlasReader.cpp
+6>  TextBMFontReader.cpp
+6>..\editor-support\cocostudio\WidgetReader\TabControlReader\TabControlReader.cpp(181): warning C4800: 'uint8_t' : forcing value to bool 'true' or 'false' (performance warning)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TextAtlasReader\TextAtlasReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TextAtlasReader\TextAtlasReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TextBMFontReader\TextBMFontReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TextBMFontReader\TextBMFontReader.cpp)
+6>  TextFieldReader.cpp
+6>  TextReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TextFieldReader\TextFieldReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TextFieldReader\TextFieldReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TextReader\TextReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\TextReader\TextReader.cpp)
+6>  Node3DReader.cpp
+6>  Sprite3DReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\Node3DReader\Node3DReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\Node3DReader\Node3DReader.cpp)
+6>  UserCameraReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\UserCameraReader\UserCameraReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\UserCameraReader\UserCameraReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\Sprite3DReader\Sprite3DReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\Sprite3DReader\Sprite3DReader.cpp)
+6>  Particle3DReader.cpp
+6>  WidgetReader.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\Particle3DReader\Particle3DReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\Particle3DReader\Particle3DReader.cpp)
+6>  CCAffineTransform.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1522): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\WidgetReader.cpp)
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CSParseBinary_generated.h(1569): warning C4305: 'argument' : truncation from 'double' to 'float' (..\editor-support\cocostudio\WidgetReader\WidgetReader.cpp)
+6>  CCGeometry.cpp
+6>  CCVertex.cpp
+6>  Mat4.cpp
+6>  MathUtil.cpp
+6>  Quaternion.cpp
+6>  TransformUtils.cpp
+6>  Vec2.cpp
+6>  Vec3.cpp
+6>  Vec4.cpp
+6>  CCNavMesh.cpp
+6>  CCNavMeshAgent.cpp
+6>  CCNavMeshDebugDraw.cpp
+6>  CCNavMeshObstacle.cpp
+6>  CCNavMeshUtils.cpp
+6>  CCDownloader-curl.cpp
+6>  CCDownloader.cpp
+6>  HttpClient.cpp
+6>  SocketIO.cpp
+6>  WebSocket.cpp
+6>  CCPhysics3D.cpp
+6>  CCPhysics3DComponent.cpp
+6>..\network\WebSocket.cpp(747): warning C4018: '>' : signed/unsigned mismatch
+6>..\network\WebSocket.cpp(814): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+6>  CCPhysics3DConstraint.cpp
+6>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\physics3d\CCPhysics3D.cpp)
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+6>  CCPhysics3DDebugDrawer.cpp
+6>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\physics3d\CCPhysics3DComponent.cpp)
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+6>..\physics3d\CCPhysics3DComponent.cpp(103): warning C4018: '<' : signed/unsigned mismatch
+6>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\physics3d\CCPhysics3DConstraint.cpp)
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+6>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\physics3d\CCPhysics3DDebugDrawer.cpp)
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+6>  CCPhysics3DObject.cpp
+6>  CCPhysics3DShape.cpp
+6>  CCPhysics3DWorld.cpp
+6>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\physics3d\CCPhysics3DObject.cpp)
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+6>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\physics3d\CCPhysics3DShape.cpp)
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+6>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\physics3d\CCPhysics3DWorld.cpp)
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+6>  CCPhysicsSprite3D.cpp
+6>  CCPhysicsBody.cpp
+6>  CCPhysicsContact.cpp
+6>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\physics3d\CCPhysicsSprite3D.cpp)
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+6>..\physics\CCPhysicsBody.cpp(758): warning C4800: 'cpBool' : forcing value to bool 'true' or 'false' (performance warning)
+6>  CCPhysicsJoint.cpp
+6>  CCPhysicsShape.cpp
+6>  CCPhysicsWorld.cpp
+6>  CCFileUtils.cpp
+6>  CCGLView.cpp
+6>  CCImage.cpp
+6>  CCSAXParser.cpp
+6>..\platform\CCImage.cpp(2130): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+6>  CCThread.cpp
+6>  CCGLViewImpl-desktop.cpp
+6>  CCApplication-win32.cpp
+6>  CCCommon-win32.cpp
+6>  CCDevice-win32.cpp
+6>  CCFileUtils-win32.cpp
+6>D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/win32/CCFileUtils-win32.h(153): warning C4996: 'cocos2d::FileUtils::getFileData': was declared deprecated (..\platform\win32\CCFileUtils-win32.cpp)
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+6>  CCStdC-win32.cpp
+6>  CCBatchCommand.cpp
+6>  CCCustomCommand.cpp
+6>  CCFrameBuffer.cpp
+6>  CCGLProgram.cpp
+6>  CCGLProgramCache.cpp
+6>  CCGLProgramState.cpp
+6>  CCGLProgramStateCache.cpp
+6>  ccGLStateCache.cpp
+6>  CCGroupCommand.cpp
+6>  CCMaterial.cpp
+6>  CCMeshCommand.cpp
+6>  CCPass.cpp
+6>  CCPrimitive.cpp
+6>  CCPrimitiveCommand.cpp
+6>  CCQuadCommand.cpp
+6>  CCRenderCommand.cpp
+6>  CCRenderer.cpp
+6>  CCRenderState.cpp
+6>  ccShaders.cpp
+6>  CCTechnique.cpp
+6>  CCTexture2D.cpp
+6>  CCTextureAtlas.cpp
+6>  CCTextureCache.cpp
+6>  CCTextureCube.cpp
+6>  CCTrianglesCommand.cpp
+6>  CCVertexAttribBinding.cpp
+6>  CCVertexIndexBuffer.cpp
+6>  CCVertexIndexData.cpp
+6>  LocalStorage.cpp
+6>  CocosGUI.cpp
+6>  UIButton.cpp
+6>  UIAbstractCheckButton.cpp
+6>  UICheckBox.cpp
+6>  UIRadioButton.cpp
+6>  UIDeprecated.cpp
+6>  UIEditBox.cpp
+6>  UIEditBoxImpl-win32.cpp
+6>  UIHBox.cpp
+6>  UIHelper.cpp
+6>  UIImageView.cpp
+6>  UILayout.cpp
+6>  UILayoutComponent.cpp
+6>  UILayoutManager.cpp
+6>  UILayoutParameter.cpp
+6>  UIListView.cpp
+6>  UILoadingBar.cpp
+6>  UIPageView.cpp
+6>  UIPageViewIndicator.cpp
+6>  UIRelativeBox.cpp
+6>..\ui\UIPageView.cpp(266): warning C4305: 'return' : truncation from 'double' to 'float'
+6>..\ui\UIPageView.cpp(326): warning C4996: 'cocos2d::ui::PageView::getPages': was declared deprecated
+6>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\ui/UIPageView.h(215) : see declaration of 'cocos2d::ui::PageView::getPages'
+6>  UIRichText.cpp
+6>  UIScale9Sprite.cpp
+6>  UIScrollView.cpp
+6>  UIScrollViewBar.cpp
+6>..\ui\UIRichText.cpp(717): warning C4018: '<' : signed/unsigned mismatch
+6>..\ui\UIRichText.cpp(804): warning C4018: '<=' : signed/unsigned mismatch
+6>  UISlider.cpp
+6>  UITabControl.cpp
+6>  UIText.cpp
+6>  UITextAtlas.cpp
+6>  UITextBMFont.cpp
+6>  UITextField.cpp
+6>  UIVBox.cpp
+6>  UIWebView.cpp
+6>  UIWidget.cpp
+6>..\ui\UITextField.cpp(89): warning C4018: '>=' : signed/unsigned mismatch
+6>  CCAction.cpp
+6>  CCActionCamera.cpp
+6>  CCActionCatmullRom.cpp
+6>  CCActionEase.cpp
+6>  CCActionGrid.cpp
+6>  CCActionGrid3D.cpp
+6>  CCActionInstant.cpp
+6>  CCActionInterval.cpp
+6>  CCActionManager.cpp
+6>  CCActionPageTurn3D.cpp
+6>  CCActionProgressTimer.cpp
+6>  CCActionTiledGrid.cpp
+6>  CCActionTween.cpp
+6>  CCAnimation.cpp
+6>  CCAnimationCache.cpp
+6>  CCAtlasNode.cpp
+6>  CCAutoPolygon.cpp
+6>  CCCamera.cpp
+6>  CCCameraBackgroundBrush.cpp
+6>  CCClippingNode.cpp
+6>  CCClippingRectangleNode.cpp
+6>  CCComponent.cpp
+6>  CCComponentContainer.cpp
+6>  CCDrawingPrimitives.cpp
+6>  CCDrawNode.cpp
+6>  CCFastTMXLayer.cpp
+6>  CCFastTMXTiledMap.cpp
+6>  CCFontAtlas.cpp
+6>  CCFontAtlasCache.cpp
+6>  CCFontCharMap.cpp
+6>  CCFontFNT.cpp
+6>  CCFontFreeType.cpp
+6>  CCGLBufferedNode.cpp
+6>  CCGrabber.cpp
+6>  CCGrid.cpp
+6>CCFontFNT.cpp(328): warning C4018: '<' : signed/unsigned mismatch
+6>  CCLabel.cpp
+6>  CCLabelAtlas.cpp
+6>CCLabel.cpp(783): warning C4018: '>' : signed/unsigned mismatch
+6>CCLabel.cpp(785): warning C4018: '<' : signed/unsigned mismatch
+6>CCLabel.cpp(1132): warning C4305: 'argument' : truncation from 'double' to 'float'
+6>  CCLabelBMFont.cpp
+6>  CCLabelTextFormatter.cpp
+6>  CCLabelTTF.cpp
+6>  CCLayer.cpp
+6>  CCLight.cpp
+6>  CCMenu.cpp
+6>  CCMenuItem.cpp
+6>  CCMotionStreak.cpp
+6>  CCNode.cpp
+6>  CCNodeGrid.cpp
+6>  CCParallaxNode.cpp
+6>  CCParticleBatchNode.cpp
+6>  CCParticleExamples.cpp
+6>  CCParticleSystem.cpp
+6>  CCParticleSystemQuad.cpp
+6>  CCProgressTimer.cpp
+6>  CCProtectedNode.cpp
+6>  CCRenderTexture.cpp
+6>  CCScene.cpp
+6>  CCSprite.cpp
+6>  CCSpriteBatchNode.cpp
+6>  CCSpriteFrame.cpp
+6>  CCSpriteFrameCache.cpp
+6>  CCTextFieldTTF.cpp
+6>  CCTileMapAtlas.cpp
+6>  CCTMXLayer.cpp
+6>  CCTMXObjectGroup.cpp
+6>  CCTMXTiledMap.cpp
+6>  CCTMXXMLParser.cpp
+6>  CCTransition.cpp
+6>  CCTransitionPageTurn.cpp
+6>  CCTransitionProgress.cpp
+6>  CCTweenFunction.cpp
+6>  复制了 1 个文件
+6>  复制了 2 个文件
+6>  复制了 4 个文件
+6>  复制了 2 个文件
+6>  复制了 2 个文件
+6>  复制了 3 个文件
+6>  复制了 1 个文件
+6>  复制了 1 个文件
+6>  复制了 2 个文件
+6>  复制了 2 个文件
+6>  复制了 2 个文件
+6>  复制了 2 个文件
+6>  复制了 2 个文件
+6>  复制了 6 个文件
+6>  复制了 2 个文件
+6>  复制了 2 个文件
+6>libbullet.lib(btAlignedAllocator.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+6>  libchipmunk.lib(chipmunk.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+6>libbullet.lib(btAlignedAllocator.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+6>     Creating library D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\libcocos2d.lib and object D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\libcocos2d.exp
+6>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+6>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+6>  Generating code
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpshape.c(225): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpshape.c(225): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpbody.c(139): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpbody.c(141): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\include\chipmunk\cpbb.h(121): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\include\chipmunk\cpbb.h(122): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\include\chipmunk\cpbb.h(127): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\include\chipmunk\cpbb.h(128): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\include\chipmunk\cpbb.h(142): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\include\chipmunk\cpbb.h(121): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpcollision.c(65): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpconstraint.c(49): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpconstraint.c(51): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cppolyshape.c(46): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cppolyshape.c(46): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cppolyshape.c(47): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cppolyshape.c(47): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cppinjoint.c(35): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cppolyshape.c(73): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpspacehash.c(518): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpspacehash.c(518): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpdampedspring.c(40): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpspacecomponent.c(321): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpspacestep.c(273): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpspacestep.c(273): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpcollision.c(274): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpbody.c(257): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpspacecomponent.c(223): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpbody.c(156): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpbody.c(160): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpbody.c(164): warning C4756: overflow in constant arithmetic
+6>c:\users\ricardo\downloads\chipmunk-7.0.1\src\cpspace.c(155): warning C4756: overflow in constant arithmetic
+6>  Finished generating code
+6>libchipmunk.lib(chipmunk.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(chipmunk.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpBody.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpBody.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpShape.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpShape.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpConstraint.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpConstraint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpPinJoint.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpPinJoint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpSlideJoint.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpSlideJoint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpPivotJoint.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpPivotJoint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpGrooveJoint.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpGrooveJoint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpDampedSpring.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpDampedSpring.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpSpace.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpSpace.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpSpaceComponent.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpSpaceComponent.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpArbiter.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpArbiter.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpDampedRotarySpring.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpDampedRotarySpring.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpRotaryLimitJoint.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpRotaryLimitJoint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpRatchetJoint.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpRatchetJoint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpGearJoint.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpGearJoint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpSimpleMotor.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpSimpleMotor.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpPolyShape.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpPolyShape.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpSpaceQuery.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpSpaceQuery.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpSpaceStep.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpSpaceStep.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpSpaceDebug.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpSpaceDebug.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpArray.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpArray.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpCollision.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpCollision.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpHashSet.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpHashSet.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpSpatialIndex.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpSpatialIndex.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpBBTree.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpBBTree.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpSpaceHash.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpSpaceHash.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libchipmunk.lib(cpRobust.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'libchipmunk.lib(cpRobust.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc120.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcapimin.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcapimin.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcapistd.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcapistd.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcarith.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcarith.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcparam.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcparam.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdatadst.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdatadst.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcinit.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcinit.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcmaster.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcmaster.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcmarker.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcmarker.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcmainct.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcmainct.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcprepct.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcprepct.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jccoefct.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jccoefct.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jccolor.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jccolor.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcsample.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcsample.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jchuff.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jchuff.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcdctmgr.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcdctmgr.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jfdctfst.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jfdctfst.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jfdctflt.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jfdctflt.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jfdctint.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jfdctint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdapimin.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdapimin.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdapistd.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdapistd.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdarith.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdarith.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdatasrc.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdatasrc.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdmaster.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdmaster.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdinput.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdinput.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdmarker.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdmarker.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdhuff.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdhuff.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdmainct.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdmainct.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdcoefct.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdcoefct.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdpostct.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdpostct.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jddctmgr.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jddctmgr.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jidctfst.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jidctfst.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jidctflt.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jidctflt.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jidctint.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jidctint.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdsample.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdsample.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdcolor.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdcolor.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jquant1.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jquant1.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jquant2.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jquant2.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jdmerge.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdmerge.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jaricom.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jaricom.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jcomapi.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcomapi.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jutils.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jutils.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jerror.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jerror.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jmemmgr.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jmemmgr.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>libjpeg.lib(jmemnobs.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jmemnobs.obj)' or at 'D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\vc110.pdb'; linking object as if no debug info
+6>  libcocos2d.vcxproj -> D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\libcocos2d.dll
+7>------ Build started: Project: libluacocos2d, Configuration: Debug Win32 ------
+7>  复制了 3 个文件
+7>  auxiliar.c
+7>  buffer.c
+7>  except.c
+7>  inet.c
+7>  io.c
+7>  luasocket.c
+7>  luasocket_scripts.c
+7>  mime.c
+7>  options.c
+7>  select.c
+7>..\..\..\..\external\lua\luasocket\inet.c(254): warning C4133: 'function' : incompatible types - from 'WCHAR *' to 'const char *'
+7>..\..\..\..\external\lua\luasocket\inet.c(288): warning C4133: 'function' : incompatible types - from 'WCHAR *' to 'const char *'
+7>  tcp.c
+7>  timeout.c
+7>  udp.c
+7>  wsocket.c
+7>..\..\..\..\external\lua\luasocket\wsocket.c(431): warning C4133: 'return' : incompatible types - from 'WCHAR *' to 'const char *'
+7>..\..\..\..\external\lua\luasocket\udp.c(181): warning C4133: 'function' : incompatible types - from 'WCHAR *' to 'const char *'
+7>..\..\..\..\external\lua\luasocket\udp.c(251): warning C4133: 'function' : incompatible types - from 'WCHAR *' to 'const char *'
+7>  tolua_event.c
+7>  tolua_is.c
+7>  tolua_map.c
+7>  tolua_push.c
+7>  tolua_to.c
+7>  lua_extensions.c
+7>  xxtea.cpp
+7>  lua_cocos2dx_3d_auto.cpp
+7>  lua_cocos2dx_audioengine_auto.cpp
+7>  lua_cocos2dx_auto.cpp
+7>  lua_cocos2dx_cocosbuilder_auto.cpp
+7>..\auto\lua_cocos2dx_3d_auto.cpp(90): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_3d_auto.cpp(5117): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_3d_auto.cpp(5513): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_3d_auto.cpp(6148): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_3d_auto.cpp(6246): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_3d_auto.cpp(6297): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_3d_auto.cpp(6351): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(12606): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(12648): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(19750): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(19771): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(20591): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(20642): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(26151): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(26263): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(28765): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(33302): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(80104): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(81191): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(81220): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_auto.cpp(98495): warning C4083: expected '('; found identifier 'NO'
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_3d_auto.cpp(6155): warning C4700: uninitialized local variable 'arg1' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_3d_auto.cpp(6358): warning C4700: uninitialized local variable 'arg1' used
+7>  lua_cocos2dx_cocosdenshion_auto.cpp
+7>  lua_cocos2dx_csloader_auto.cpp
+7>  lua_cocos2dx_experimental_auto.cpp
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(19754): warning C4700: uninitialized local variable 'arg2' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(19775): warning C4700: uninitialized local variable 'arg2' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(20598): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(20649): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(28772): warning C4700: uninitialized local variable 'arg1' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(33309): warning C4700: uninitialized local variable 'arg1' used
+7>  lua_cocos2dx_experimental_video_auto.cpp
+7>  lua_cocos2dx_experimental_webview_auto.cpp
+7>  lua_cocos2dx_extension_auto.cpp
+7>  lua_cocos2dx_navmesh_auto.cpp
+7>  lua_cocos2dx_physics3d_auto.cpp
+7>  lua_cocos2dx_physics_auto.cpp
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\auto\lua_cocos2dx_physics3d_auto.cpp)
+7>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+7>..\auto\lua_cocos2dx_extension_auto.cpp(16000): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_navmesh_auto.cpp(521): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_navmesh_auto.cpp(1190): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_physics_auto.cpp(4906): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_physics3d_auto.cpp(591): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_physics3d_auto.cpp(646): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_physics3d_auto.cpp(934): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_physics3d_auto.cpp(2140): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_physics3d_auto.cpp(5179): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_physics3d_auto.cpp(5554): warning C4083: expected '('; found identifier 'NO'
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_extension_auto.cpp(16007): warning C4700: uninitialized local variable 'arg0' used
+7>  lua_cocos2dx_spine_auto.cpp
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_navmesh_auto.cpp(1197): warning C4700: uninitialized local variable 'arg0' used
+7>  lua_cocos2dx_studio_auto.cpp
+7>  lua_cocos2dx_ui_auto.cpp
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.cpp(598): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.cpp(2147): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.cpp(5561): warning C4700: uninitialized local variable 'arg0' used
+7>  lua_cocos2dx_3d_manual.cpp
+7>..\auto\lua_cocos2dx_spine_auto.cpp(180): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(196): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(665): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(682): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(845): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(915): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(932): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(965): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(981): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(1016): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(1036): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(1227): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(1285): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(1343): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_spine_auto.cpp(1455): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(4653): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(6518): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(6709): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(7757): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(8324): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(8371): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(8552): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(8649): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(9042): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(11020): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(13210): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(13689): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(18968): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(19065): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(19490): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(19698): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(19792): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(22820): warning C4083: expected '('; found identifier 'NO'
+7>..\manual\3d\lua_cocos2dx_3d_manual.cpp(209): warning C4996: 'lua_cocos2dx_3d_Sprite3D_setBlendFunc01': was declared deprecated
+7>          ..\manual\3d\lua_cocos2dx_3d_manual.cpp(32) : see declaration of 'lua_cocos2dx_3d_Sprite3D_setBlendFunc01'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(28647): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(28792): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(29187): warning C4083: expected '('; found identifier 'NO'
+7>..\auto\lua_cocos2dx_ui_auto.cpp(29348): warning C4083: expected '('; found identifier 'NO'
+7>..\manual\3d\lua_cocos2dx_3d_manual.cpp(1850): warning C4018: '<=' : signed/unsigned mismatch
+7>..\manual\3d\lua_cocos2dx_3d_manual.cpp(1869): warning C4018: '<=' : signed/unsigned mismatch
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(187): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(205): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(669): warning C4700: uninitialized local variable 'arg1' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(690): warning C4700: uninitialized local variable 'arg1' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(918): warning C4700: uninitialized local variable 'arg1' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(938): warning C4700: uninitialized local variable 'arg1' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(969): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(989): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1020): warning C4700: uninitialized local variable 'arg1' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1044): warning C4700: uninitialized local variable 'arg1' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1240): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1298): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1356): warning C4700: uninitialized local variable 'arg0' used
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1468): warning C4700: uninitialized local variable 'arg0' used
+7>  lua_cocos2dx_audioengine_manual.cpp
+7>  CCLuaBridge.cpp
+7>  CCLuaEngine.cpp
+7>  CCLuaStack.cpp
+7>..\manual\CCLuaStack.cpp(810): warning C4996: 'cocos2d::FileUtils::getFileData': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+7>..\manual\CCLuaStack.cpp(855): warning C4018: '<' : signed/unsigned mismatch
+7>  CCLuaValue.cpp
+7>  Cocos2dxLuaLoader.cpp
+7>  LuaOpengl.cpp
+7>  LuaScriptHandlerMgr.cpp
+7>  CCComponentLua.cpp
+7>..\manual\cocos2d\LuaOpengl.cpp(4431): warning C4996: 'cocos2d::DrawPrimitives::drawPoint': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(100) : see declaration of 'cocos2d::DrawPrimitives::drawPoint'
+7>..\manual\cocos2d\LuaOpengl.cpp(4466): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\LuaOpengl.cpp(4484): warning C4996: 'cocos2d::DrawPrimitives::drawPoints': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(108) : see declaration of 'cocos2d::DrawPrimitives::drawPoints'
+7>..\manual\cocos2d\LuaOpengl.cpp(4519): warning C4996: 'cocos2d::DrawPrimitives::drawLine': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(115) : see declaration of 'cocos2d::DrawPrimitives::drawLine'
+7>..\manual\cocos2d\LuaOpengl.cpp(4552): warning C4996: 'cocos2d::DrawPrimitives::drawRect': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(123) : see declaration of 'cocos2d::DrawPrimitives::drawRect'
+7>..\manual\cocos2d\LuaOpengl.cpp(4592): warning C4996: 'cocos2d::DrawPrimitives::drawSolidRect': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(133) : see declaration of 'cocos2d::DrawPrimitives::drawSolidRect'
+7>..\manual\cocos2d\LuaOpengl.cpp(4628): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\LuaOpengl.cpp(4646): warning C4996: 'cocos2d::DrawPrimitives::drawPoly': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(142) : see declaration of 'cocos2d::DrawPrimitives::drawPoly'
+7>..\manual\cocos2d\LuaOpengl.cpp(4682): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\LuaOpengl.cpp(4708): warning C4996: 'cocos2d::DrawPrimitives::drawSolidPoly': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(150) : see declaration of 'cocos2d::DrawPrimitives::drawSolidPoly'
+7>..\manual\cocos2d\LuaOpengl.cpp(4752): warning C4996: 'cocos2d::DrawPrimitives::drawCircle': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(162) : see declaration of 'cocos2d::DrawPrimitives::drawCircle'
+7>..\manual\cocos2d\LuaOpengl.cpp(4790): warning C4996: 'cocos2d::DrawPrimitives::drawSolidCircle': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(183) : see declaration of 'cocos2d::DrawPrimitives::drawSolidCircle'
+7>..\manual\cocos2d\LuaOpengl.cpp(4832): warning C4996: 'cocos2d::DrawPrimitives::drawQuadBezier': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(203) : see declaration of 'cocos2d::DrawPrimitives::drawQuadBezier'
+7>..\manual\cocos2d\LuaOpengl.cpp(4879): warning C4996: 'cocos2d::DrawPrimitives::drawCubicBezier': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(215) : see declaration of 'cocos2d::DrawPrimitives::drawCubicBezier'
+7>..\manual\cocos2d\LuaOpengl.cpp(4925): warning C4996: 'cocos2d::DrawPrimitives::drawCatmullRom': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(224) : see declaration of 'cocos2d::DrawPrimitives::drawCatmullRom'
+7>..\manual\cocos2d\LuaOpengl.cpp(4971): warning C4996: 'cocos2d::DrawPrimitives::drawCardinalSpline': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(234) : see declaration of 'cocos2d::DrawPrimitives::drawCardinalSpline'
+7>..\manual\cocos2d\LuaOpengl.cpp(5003): warning C4996: 'cocos2d::DrawPrimitives::setDrawColor4B': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(245) : see declaration of 'cocos2d::DrawPrimitives::setDrawColor4B'
+7>..\manual\cocos2d\LuaOpengl.cpp(5035): warning C4996: 'cocos2d::DrawPrimitives::setDrawColor4F': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(256) : see declaration of 'cocos2d::DrawPrimitives::setDrawColor4F'
+7>..\manual\cocos2d\LuaOpengl.cpp(5061): warning C4996: 'cocos2d::DrawPrimitives::setPointSize': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(263) : see declaration of 'cocos2d::DrawPrimitives::setPointSize'
+7>..\manual\cocos2d\LuaOpengl.cpp(5086): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawPoint00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4417) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawPoint00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5087): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawPoints00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4445) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawPoints00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5088): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawLine00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4499) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawLine00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5089): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawRect00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4532) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawRect00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5090): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawSolidRect00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4565) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawSolidRect00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5091): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawPoly00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4605) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawPoly00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5092): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawSolidPoly00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4661) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawSolidPoly00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5093): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawCircle00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4723) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawCircle00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5094): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawSolidCircle00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4765) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawSolidCircle00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5095): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawQuadBezier00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4804) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawQuadBezier00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5096): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawCubicBezier00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4845) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawCubicBezier00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5097): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawCatmullRom00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4892) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawCatmullRom00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5098): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawCardinalSpline00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4938) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawCardinalSpline00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5099): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawColor4B00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(4984) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawColor4B00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5100): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawColor4F00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(5016) : see declaration of 'tolua_cocos2d_DrawPrimitives_drawColor4F00'
+7>..\manual\cocos2d\LuaOpengl.cpp(5101): warning C4996: 'tolua_cocos2d_DrawPrimitives_setPointSize00': was declared deprecated
+7>          ..\manual\cocos2d\LuaOpengl.cpp(5048) : see declaration of 'tolua_cocos2d_DrawPrimitives_setPointSize00'
+7>..\manual\Cocos2dxLuaLoader.cpp(90): warning C4996: 'cocos2d::FileUtils::getFileData': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+7>..\manual\Cocos2dxLuaLoader.cpp(98): warning C4996: 'cocos2d::FileUtils::getFileData': was declared deprecated
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+7>          d:\mygit\luabindtest\frameworks\cocos2d-x\cocos\platform/CCFileUtils.h(111) : see declaration of 'cocos2d::FileUtils::getFileData'
+7>  lua_cocos2dx_deprecated.cpp
+7>  lua_cocos2dx_experimental_manual.cpp
+7>  lua_cocos2dx_manual.cpp
+7>  lua_cocos2dx_physics_manual.cpp
+7>..\manual\cocos2d\lua_cocos2dx_deprecated.cpp(1527): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(270): warning C4018: '<=' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(419): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(1752): warning C4018: '<=' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(2560): warning C4018: '<=' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(2955): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(3041): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(3120): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(3330): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(3370): warning C4018: '<' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(3985): warning C4018: '<=' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(4059): warning C4018: '<=' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(4134): warning C4018: '<=' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(4207): warning C4018: '<=' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(4282): warning C4018: '<=' : signed/unsigned mismatch
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(5039): warning C4996: 'tolua_cocos2dx_DrawNode_setBlendFunc01': was declared deprecated
+7>          ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3549) : see declaration of 'tolua_cocos2dx_DrawNode_setBlendFunc01'
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(5226): warning C4996: 'tolua_cocos2dx_Sprite_setBlendFunc01': was declared deprecated
+7>          ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3458) : see declaration of 'tolua_cocos2dx_Sprite_setBlendFunc01'
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(5241): warning C4996: 'tolua_cocos2dx_LayerColor_setBlendFunc01': was declared deprecated
+7>          ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3523) : see declaration of 'tolua_cocos2dx_LayerColor_setBlendFunc01'
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(5267): warning C4996: 'tolua_cocos2dx_ParticleSystem_setBlendFunc01': was declared deprecated
+7>          ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3536) : see declaration of 'tolua_cocos2dx_ParticleSystem_setBlendFunc01'
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(5310): warning C4996: 'tolua_cocos2dx_SpriteBatchNode_setBlendFunc01': was declared deprecated
+7>          ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3471) : see declaration of 'tolua_cocos2dx_SpriteBatchNode_setBlendFunc01'
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(5323): warning C4996: 'tolua_cocos2dx_MotionStreak_setBlendFunc01': was declared deprecated
+7>          ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3484) : see declaration of 'tolua_cocos2dx_MotionStreak_setBlendFunc01'
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(5336): warning C4996: 'tolua_cocos2dx_AtlasNode_setBlendFunc01': was declared deprecated
+7>          ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3497) : see declaration of 'tolua_cocos2dx_AtlasNode_setBlendFunc01'
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(5349): warning C4996: 'tolua_cocos2dx_ParticleBatchNode_setBlendFunc01': was declared deprecated
+7>          ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3510) : see declaration of 'tolua_cocos2dx_ParticleBatchNode_setBlendFunc01'
+7>..\manual\cocos2d\lua_cocos2dx_manual.cpp(7166): warning C4018: '<=' : signed/unsigned mismatch
+7>  CCBProxy.cpp
+7>  lua_cocos2dx_cocosbuilder_manual.cpp
+7>  lua_cocos2dx_cocosdenshion_manual.cpp
+7>  CustomGUIReader.cpp
+7>  lua-cocos-studio-conversions.cpp
+7>  lua_cocos2dx_coco_studio_manual.cpp
+7>  lua_cocos2dx_csloader_manual.cpp
+7>  lua_cocos2dx_extension_manual.cpp
+7>  LuaBasicConversions.cpp
+7>..\manual\cocostudio\lua_cocos2dx_coco_studio_manual.cpp(386): warning C4996: 'cocostudio::Bone::getIgnoreMovementBoneData': was declared deprecated
+7>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CCBone.h(194) : see declaration of 'cocostudio::Bone::getIgnoreMovementBoneData'
+7>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CCBone.h(194) : see declaration of 'cocostudio::Bone::getIgnoreMovementBoneData'
+7>  lua_module_register.cpp
+7>  lua_cocos2dx_navmesh_conversions.cpp
+7>  lua_cocos2dx_navmesh_manual.cpp
+7>  lua_cocos2dx_network_manual.cpp
+7>  Lua_web_socket.cpp
+7>  lua_xml_http_request.cpp
+7>  lua_cocos2dx_physics3d_manual.cpp
+7>  LuaSkeletonAnimation.cpp
+7>  lua_cocos2dx_spine_manual.cpp
+7>..\manual\network\lua_xml_http_request.cpp(313): warning C4102: 'tolua_lerror' : unreferenced label
+7>..\manual\network\lua_xml_http_request.cpp(694): warning C4018: '<' : signed/unsigned mismatch
+7>d:\mygit\luabindtest\frameworks\cocos2d-x\external\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: 'btDbvtBroadphase' : type name first seen using 'class' now seen using 'struct' (..\manual\physics3d\lua_cocos2dx_physics3d_manual.cpp)
+7>          D:\mygit\luabindtest\frameworks\cocos2d-x\cocos\physics3d/CCPhysics3DWorld.h(39) : see declaration of 'btDbvtBroadphase'
+7>  tolua_fix.cpp
+7>..\manual\spine\lua_cocos2dx_spine_manual.cpp(478): warning C4996: 'tolua_spine_SkeletoneAnimation_setBlendFunc': was declared deprecated
+7>          ..\manual\spine\lua_cocos2dx_spine_manual.cpp(325) : see declaration of 'tolua_spine_SkeletoneAnimation_setBlendFunc'
+7>  lua_cocos2dx_experimental_video_manual.cpp
+7>  lua_cocos2dx_experimental_webview_manual.cpp
+7>  lua_cocos2dx_ui_manual.cpp
+7>  libluacocos2d.vcxproj -> D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\libluacocos2d.lib
+8>------ Build started: Project: luabindtest, Configuration: Debug Win32 ------
+8>  AppDelegate.cpp
+8>  lua_debugger.c
+8>  RuntimeLuaImpl.cpp
+8>  main.cpp
+8>  SimulatorWin.cpp
+8>d:\mygit\luabindtest\frameworks\runtime-src\classes\appdelegate.cpp(57): warning C4305: 'argument' : truncation from 'double' to 'float'
+8>d:\mygit\luabindtest\frameworks\runtime-src\proj.win32\simulatorwin.cpp(351): warning C4305: 'argument' : truncation from 'double' to 'float'
+8>  stdafx.cpp
+8>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\luabindtest.exe) does not match the Linker's OutputFile property value (D:\mygit\luabindtest\simulator\win32\luabindtest.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+8>     Creating library D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\luabindtest.lib and object D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\luabindtest.exp
+8>  luabindtest.vcxproj -> D:\mygit\luabindtest\frameworks\runtime-src\proj.win32\Debug.win32\luabindtest.exe
+8>  复制了 13 个文件
+8>  复制了 1 个文件
+8>  D:\mygit\luabindtest\res\HelloWorld.png -> D:\mygit\luabindtest\simulator\win32\res\HelloWorld.png
+8>  复制了 1 个文件
+8>  D:\mygit\luabindtest\src\config.lua -> D:\mygit\luabindtest\simulator\win32\src\config.lua
+8>  D:\mygit\luabindtest\src\main.lua -> D:\mygit\luabindtest\simulator\win32\src\main.lua
+8>  D:\mygit\luabindtest\src\app\MyApp.lua -> D:\mygit\luabindtest\simulator\win32\src\app\MyApp.lua
+8>  D:\mygit\luabindtest\src\app\views\MainScene.lua -> D:\mygit\luabindtest\simulator\win32\src\app\views\MainScene.lua
+8>  D:\mygit\luabindtest\src\cocos\init.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\init.lua
+8>  D:\mygit\luabindtest\src\cocos\3d\3dConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\3d\3dConstants.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\bitExtend.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\bitExtend.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\Cocos2d.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\Cocos2d.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\Cocos2dConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\Cocos2dConstants.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\deprecated.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\deprecated.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\DeprecatedCocos2dClass.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\DeprecatedCocos2dClass.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\DeprecatedCocos2dEnum.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\DeprecatedCocos2dEnum.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\DeprecatedCocos2dFunc.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\DeprecatedCocos2dFunc.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\DeprecatedOpenglEnum.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\DeprecatedOpenglEnum.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\DrawPrimitives.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\DrawPrimitives.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\functions.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\functions.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\json.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\json.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\luaj.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\luaj.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\luaoc.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\luaoc.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\Opengl.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\Opengl.lua
+8>  D:\mygit\luabindtest\src\cocos\cocos2d\OpenglConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocos2d\OpenglConstants.lua
+8>  D:\mygit\luabindtest\src\cocos\cocosbuilder\CCBReaderLoad.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocosbuilder\CCBReaderLoad.lua
+8>  D:\mygit\luabindtest\src\cocos\cocosbuilder\DeprecatedCocosBuilderClass.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocosbuilder\DeprecatedCocosBuilderClass.lua
+8>  D:\mygit\luabindtest\src\cocos\cocosdenshion\AudioEngine.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocosdenshion\AudioEngine.lua
+8>  D:\mygit\luabindtest\src\cocos\cocosdenshion\DeprecatedCocosDenshionClass.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocosdenshion\DeprecatedCocosDenshionClass.lua
+8>  D:\mygit\luabindtest\src\cocos\cocosdenshion\DeprecatedCocosDenshionFunc.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocosdenshion\DeprecatedCocosDenshionFunc.lua
+8>  D:\mygit\luabindtest\src\cocos\cocostudio\CocoStudio.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocostudio\CocoStudio.lua
+8>  D:\mygit\luabindtest\src\cocos\cocostudio\DeprecatedCocoStudioClass.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocostudio\DeprecatedCocoStudioClass.lua
+8>  D:\mygit\luabindtest\src\cocos\cocostudio\DeprecatedCocoStudioFunc.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocostudio\DeprecatedCocoStudioFunc.lua
+8>  D:\mygit\luabindtest\src\cocos\cocostudio\StudioConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\cocostudio\StudioConstants.lua
+8>  D:\mygit\luabindtest\src\cocos\controller\ControllerConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\controller\ControllerConstants.lua
+8>  D:\mygit\luabindtest\src\cocos\extension\DeprecatedExtensionClass.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\extension\DeprecatedExtensionClass.lua
+8>  D:\mygit\luabindtest\src\cocos\extension\DeprecatedExtensionEnum.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\extension\DeprecatedExtensionEnum.lua
+8>  D:\mygit\luabindtest\src\cocos\extension\DeprecatedExtensionFunc.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\extension\DeprecatedExtensionFunc.lua
+8>  D:\mygit\luabindtest\src\cocos\extension\ExtensionConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\extension\ExtensionConstants.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\audio.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\audio.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\device.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\device.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\display.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\display.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\init.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\init.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\package_support.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\package_support.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\transition.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\transition.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\components\event.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\components\event.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\LayerEx.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\LayerEx.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\MenuEx.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\MenuEx.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\NodeEx.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\NodeEx.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\SpriteEx.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\SpriteEx.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\UICheckBox.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\UICheckBox.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\UIEditBox.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\UIEditBox.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\UIListView.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\UIListView.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\UIPageView.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\UIPageView.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\UIScrollView.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\UIScrollView.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\UISlider.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\UISlider.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\UITextField.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\UITextField.lua
+8>  D:\mygit\luabindtest\src\cocos\framework\extends\UIWidget.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\framework\extends\UIWidget.lua
+8>  D:\mygit\luabindtest\src\cocos\network\DeprecatedNetworkClass.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\network\DeprecatedNetworkClass.lua
+8>  D:\mygit\luabindtest\src\cocos\network\DeprecatedNetworkEnum.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\network\DeprecatedNetworkEnum.lua
+8>  D:\mygit\luabindtest\src\cocos\network\DeprecatedNetworkFunc.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\network\DeprecatedNetworkFunc.lua
+8>  D:\mygit\luabindtest\src\cocos\network\NetworkConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\network\NetworkConstants.lua
+8>  D:\mygit\luabindtest\src\cocos\physics3d\physics3d-constants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\physics3d\physics3d-constants.lua
+8>  D:\mygit\luabindtest\src\cocos\spine\SpineConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\spine\SpineConstants.lua
+8>  D:\mygit\luabindtest\src\cocos\ui\DeprecatedUIEnum.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\ui\DeprecatedUIEnum.lua
+8>  D:\mygit\luabindtest\src\cocos\ui\DeprecatedUIFunc.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\ui\DeprecatedUIFunc.lua
+8>  D:\mygit\luabindtest\src\cocos\ui\experimentalUIConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\ui\experimentalUIConstants.lua
+8>  D:\mygit\luabindtest\src\cocos\ui\GuiConstants.lua -> D:\mygit\luabindtest\simulator\win32\src\cocos\ui\GuiConstants.lua
+8>  D:\mygit\luabindtest\src\packages\mvc\AppBase.lua -> D:\mygit\luabindtest\simulator\win32\src\packages\mvc\AppBase.lua
+8>  D:\mygit\luabindtest\src\packages\mvc\init.lua -> D:\mygit\luabindtest\simulator\win32\src\packages\mvc\init.lua
+8>  D:\mygit\luabindtest\src\packages\mvc\ViewBase.lua -> D:\mygit\luabindtest\simulator\win32\src\packages\mvc\ViewBase.lua
+8>  复制了 67 个文件
+========== Build: 8 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

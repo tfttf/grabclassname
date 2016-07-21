@@ -1,7 +1,7 @@
 #pragma once
 #include "Helper.h"
 #include "Assert.h"
-#define APPLICATION_EXT ".cpp;.h;.lua;"
+#define APPLICATION_EXT ".cpp;.h;.lua"
 
 class Application
 {
@@ -56,6 +56,50 @@ public:
 	}
 
 
+
+	/*
+		example:
+			pointers[100]={"a.cpp","b.h","c.obj"};
+			runfilterWithFile("class.txt", ".cpp;.h"
+		result:
+			ret = {"a.cpp","b.h"}
+	*/
+	void runfilterWithFile(char* source, char* pattern)
+	{
+		a.assert_argc(argc);
+
+		//string cmd = h.makeCmd(argv[1]);
+		//bool success = h.listfile(cmd.c_str());
+		
+		//a.assert_load_file_success(success);
+
+		std::list<string> rawlist = dofile(source);
+		std::list<string> filelist = h.strssub(rawlist, 0, sizeof(int));
+		std::list<string> result;
+		//h.show(filelist);
+
+		cout << endl;
+		cout << endl;
+		cout << "begin list files" << endl;
+
+		std::list<string> patterns = h.splitWith(pattern, ";");
+		//	static bool isEndWithString(char* buf, std::list<string> dst)
+
+		for each (string var in filelist)
+		{
+			if (h.isEndWithString(const_cast<char*>(var.c_str()), patterns))
+			{
+				result.push_back(var);
+			}
+		}
+		h.show(result);
+		h.writelistToFile(result,"output.txt","\r\n");
+	}
+
+
+
+
+
 	static std::list<string> dofile(char* filename)
 	{
 		char* tmp = h.load(filename);
@@ -65,7 +109,7 @@ public:
 			return null_list;
 		}
 
-		std::list<string> ret = split(tmp);
+		std::list<string> ret = h.split(tmp);
 		delete[]tmp;
 		tmp = NULL;
 		return ret;
@@ -75,7 +119,7 @@ public:
 	static std::list<string> dofileWithExtName(char* filename, char* optionExt)
 	{
 
-		std::list<string> listext = splitWith(optionExt, ";");
+		std::list<string> listext = h.splitWith(optionExt, ";");
 		bool bFind = false;
 		for each (string var in listext)
 		{
@@ -95,7 +139,7 @@ public:
 				return null_list;
 			}
 
-			std::list<string> ret = split(tmp);
+			std::list<string> ret = h.split(tmp);
 			delete[]tmp;
 			tmp = NULL;
 			return ret;
@@ -108,67 +152,6 @@ public:
 
 	}
 
-	static std::list<string> split(char* buf)
-	{
-		char* tmpbuf = h.copyBuf(buf, 2);
-		int cline = h.getLineCounts(tmpbuf);
-		int buflen = strlen(tmpbuf);
-		std::list<string> lines;
-		h.replace(tmpbuf, buflen, '\r', 0);
-		h.replace(tmpbuf, buflen, '\n', 0);
-
-		char** pointers = new char*[HELPER_MAX_LINE_COUNTS];
-		int linecount = 0;
-		for (int i = 0; i < buflen;)
-		{
-			if (tmpbuf[i] != 0)
-			{
-				pointers[linecount] = tmpbuf + i;
-				lines.push_back(pointers[linecount]);
-				linecount++;
-				i += strlen(tmpbuf + i);
-			}
-			else
-			{
-				i += 1;
-			}
-		}
-
-		delete[] tmpbuf;
-		tmpbuf = NULL;
-		return lines;
-	}
-
-
-	static std::list<string> splitWith(char* buf, char* pattern)
-	{
-		char* tmpbuf = h.copyBuf(buf, 2);
-		int cline = h.getLineCounts(tmpbuf);
-		int buflen = strlen(tmpbuf);
-		std::list<string> lines;
-		h.zerobufWithPattern(tmpbuf, buflen, pattern);
-
-		char* pointers[HELPER_MAX_LINE_COUNTS] = { NULL };
-		int linecount = 0;
-		for (int i = 0; i < buflen;)
-		{
-			if (tmpbuf[i] != 0)
-			{
-				pointers[linecount] = tmpbuf + i;
-				lines.push_back(pointers[linecount]);
-				linecount++;
-				i += strlen(tmpbuf + i);
-			}
-			else
-			{
-				i += 1;
-			}
-		}
-
-		delete[] tmpbuf;
-		tmpbuf = NULL;
-		return lines;
-	}
 
 };
 
