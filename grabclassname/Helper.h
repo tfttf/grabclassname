@@ -1,4 +1,5 @@
 #pragma once
+#include <windows.h>
 #include <list>
 #include <string>
 #include <iostream>
@@ -6,6 +7,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <cassert>
+
 using namespace std;
 
 #define HELPER_MAX_LINE_COUNTS 200000
@@ -14,6 +16,7 @@ using namespace std;
 #define HELPER_GET_INDEX_NOT_CHAR_NOT_FOUND -1
 #define HELPER_LANGUAGE_C	0
 #define HELPER_LANGUAGE_CPP 1
+#define HELPER_NORMAL_BUF_LEN 2000
 
 class Helper
 {
@@ -286,6 +289,15 @@ public:
 		return buf;
 	}
 
+	static void deallocbuf(char* & buf)
+	{
+		if (buf)
+		{
+			delete[] buf;
+			buf = NULL;
+		}
+	}
+
 	static char* zerobuf(char* buf)
 	{
 		int len = strlen(buf);
@@ -364,6 +376,21 @@ public:
 			}
 		}
 		fclose(fp);
+	}
+
+
+	static bool writeStringToFile(std::string str, char* filename)
+	{
+		FILE *fp = fopen(filename, "w+b");
+		if (!fp)
+		{
+			cout << "error: writeStringToFile() failed." << endl;
+			return false;
+		}
+		assert(fp);
+		fwrite(str.c_str(), 1, strlen(str.c_str()), fp);
+		fclose(fp);
+		return true;
 	}
 
 	static void show(std::list<string> l)
@@ -471,6 +498,26 @@ public:
 		return lines;
 	}
 
+
+
+	//split with clipboard info
+
+	static std::list<string> splitWithClipboard()
+	{
+		std::string content = getClipboardData();
+		const char* poriginal = content.c_str();
+		char* buf = copyBuf((char*)(poriginal), 1);
+		std::list<string> ret = split(buf);
+
+
+
+		delete[]buf;
+		buf = NULL;
+
+		return ret;
+	}
+
+
 	static char* load(char* filename)
 	{
 		if (isFileExist(filename))
@@ -509,6 +556,48 @@ public:
 		return ret;
 	}
 
+	static bool isFile(char* filename)
+	{
+		FILE *fp = fopen(filename,"r+b");
+		if (!fp)
+		{
+			return false;
+		}
+		fclose(fp);
+		fp = NULL;
+		return true;
+	}
+
+	static std::list<string> getFilesFromList(std::list<string> l)
+	{
+		std::list<string> ret;
+		for each (string var in l)
+		{
+			if (isFile((char*)(var.c_str())))
+			{
+				ret.push_back(var);
+			}
+		}
+
+		return ret;
+	}
+
+
+	static std::list<string> getFileListWithExt(char* buf, char* ext)
+	{
+		std::list<string> filepathlist_raw = split(buf);
+		std::list<string> filepathlist = getFilesFromList(filepathlist_raw);
+		std::list<string> ret;
+		for (std::list<string>::const_iterator ci = filepathlist.begin(); ci != filepathlist.end(); ++ci)
+		{
+			if (isEndWithString((char*)(ci->c_str()), ext))
+			{
+				ret.push_back(*ci);
+			}
+			
+		}
+		return ret;
+	}
 
 	static bool isFileExist(char* filename)
 	{
@@ -543,6 +632,210 @@ public:
 		return ret;
 	}
 
+	static bool setClipboardData(std::string text)
+	{
+		if (OpenClipboard(NULL))
+		{
+			HGLOBAL clipbuffer;
+			char * buffer;
+			EmptyClipboard();
+			clipbuffer = GlobalAlloc(GMEM_DDESHARE, text.length() + 1);
+			buffer = (char*)GlobalLock(clipbuffer);
+			strcpy(buffer, LPCSTR(text.c_str()));
+			GlobalUnlock(clipbuffer);
+			SetClipboardData(CF_TEXT, clipbuffer);
+			CloseClipboard();
+			return true;
+		}
+		cout << "error: OpenClipboard() failed." << endl;
+		return false;
+	}
+
+	static std::string getClipboardData()
+	{
+		// Try opening the clipboard
+		if (!OpenClipboard(nullptr))
+		{
+			cout << "error: can't open clipboard" << endl; // error
+			return "";
+		}
+
+		// Get handle of clipboard object for ANSI text
+		HANDLE hData = GetClipboardData(CF_TEXT);
+		if (hData == nullptr)
+		{
+			cout << "error: GetClipboardData(CF_TEXT) failed." << endl; // error
+			return "";
+		}
+
+		// Lock the handle to get the actual text pointer
+		char * pszText = static_cast<char*>(GlobalLock(hData));
+		if (pszText == nullptr)
+		{
+			cout << "error: GlobalLock(hData) failed." << endl;
+		}
+
+
+		// Save text in a string class instance
+		std::string text(pszText);
+
+		// Release the lock
+		GlobalUnlock(hData);
+
+		// Release the clipboard
+		CloseClipboard();
+
+		return text;
+
+	}
+
+	static bool isAllCharsOfStringIn(char *src, char* tofind)
+	{
+		int len = strlen(src);
+		int len_tofind = strlen(tofind);
+
+		for (int i = 0; i < len;i++)
+		{
+			bool bFind = false;
+			for (int j = 0; j < len_tofind; j++)
+			{
+				if (src[i] == tofind[j])
+				{
+					bFind = true;
+					break;
+				}
+			}
+			if (bFind == false)
+			{
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	static bool isBeginWithStringIgnoreBlanks(char* src, char* tofind)
+	{
+		char* head = strstr(src, tofind);
+		if (head)
+		{
+			char* newbuf = allocbuf(strlen(src)+1);
+			memcpy(newbuf, src, head - src);
+
+			bool isclean = isAllCharsOfStringIn(newbuf, " \t");
+
+			delete[] newbuf;
+			newbuf = NULL;
+
+			return isclean;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	static std::string mergeStringList(std::list<string> l,char* split)
+	{
+		std::string ret;
+		for each (string var in l)
+		{
+			ret += var;
+			if (split)
+				ret += split;
+		}
+		return ret;
+	}
+
+	static std::string getFileNameFromFullPath(char* fullpath)
+	{
+		std::string str = fullpath;
+		std::string ret = "";
+		int index0 = str.find_last_of("/");
+		int index1 = str.find_last_of("\\");
+		if (index0 != -1)
+		{
+			char* buf = allocbuf(HELPER_NORMAL_BUF_LEN);
+			strcpy(buf, str.c_str() + index0+1);
+			ret = buf;
+			deallocbuf(buf);
+			return ret;
+		}
+
+		if (index1 != -1)
+		{
+			char* buf = allocbuf(HELPER_NORMAL_BUF_LEN);
+			strcpy(buf, str.c_str() + index1+1);
+			ret = buf;
+			deallocbuf(buf);
+			return ret;
+		}
+
+		return "";
+	}
+
+
+
+	static std::string getLuaFunctionName(char* str)
+	{
+		char* p = strstr(str, "(");
+
+
+		return "";
+	}
+
+
+	static std::string getLuaFunctionParams(char* str)
+	{
+		char* p0 = strstr(str, "(");
+		char* p1 = strstr(str, ")");
+		char* buf = allocbuf(HELPER_NORMAL_BUF_LEN);
+		memcpy(buf, p0 + 1, p1 - p0 - 1);
+		std::string ret = buf;
+		deallocbuf(buf);
+		return ret;
+	}
+
+	static bool isStringNoBlanks(std::string str)
+	{
+		int len = str.length();
+		const char* buf = str.c_str();
+		for (int i = 0; i < len;i++)
+		{
+			if (buf[i] == ' ')
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+	static std::string makeDebugInfoForLua(char* src,char* filename,bool printparam)
+	{
+		char* buf = allocbuf(HELPER_NORMAL_BUF_LEN);
+		char* buffilename = allocbuf(HELPER_NORMAL_BUF_LEN);
+		char* bufprint = allocbuf(HELPER_NORMAL_BUF_LEN);
+
+
+		sprintf(buf, "%s", src);
+		strcpy(buffilename, getFileNameFromFullPath(filename).c_str());
+		std::string luaparams = getLuaFunctionParams(src);
+
+		if (printparam && luaparams.length()>0 && isStringNoBlanks(luaparams))
+		{
+			sprintf(bufprint, "    print(\"%-20s\" .. \"   %s\")\n    dump(%s)", buffilename, buf, luaparams.c_str());
+		}
+		else
+		{
+			sprintf(bufprint, "    print(\"%-20s\" .. \"   %s\")", buffilename, buf, luaparams.c_str());
+		}
+		std::string ret = bufprint;
+
+		deallocbuf(buf);
+		deallocbuf(buffilename);
+		deallocbuf(bufprint);
+		return ret;
+	}
 
 
 private:

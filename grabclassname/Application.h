@@ -2,6 +2,7 @@
 #include "Helper.h"
 #include "Assert.h"
 #define APPLICATION_EXT ".cpp;.h;.lua"
+typedef std::list<string> StringList;
 
 class Application
 {
@@ -56,6 +57,68 @@ public:
 	}
 
 
+	//generate info from clipboard
+	void genDebuginfoFromClipboardForLua()
+	{
+		std::list<string> content = h.splitWithClipboard();
+
+		for (std::list<string>::const_iterator ci = content.begin(); ci != content.end(); ++ci)
+		{
+			bool bFind = false;
+			//if (strstr((*ci).c_str(), "::")){
+			//	bFind = true;
+			//}
+
+			if (h.isBeginWithStringIgnoreBlanks((char*)((*ci).c_str()), "function")){
+				bFind = true;
+			}
+
+			if (bFind)
+			{
+				std::string str = h.makeDebugInfoForLua((char*)((*ci).c_str()),"  ",true);
+				content.insert(std::next(ci,1), str);
+			}
+
+		}
+		std::string ret = h.mergeStringList(content,"\r\n");
+		//h.show(content);
+		h.setClipboardData(ret);
+	}
+
+
+	//generate info from file
+	std::string genDebuginfoFromFileForLua(char* filename)
+	{
+		cout << "handling file: " << filename << endl;
+		char* file_buf = h.load(filename);
+		std::list<string> content = h.split(file_buf);
+
+		for (std::list<string>::const_iterator ci = content.begin(); ci != content.end(); ++ci)
+		{
+			bool bFind = false;
+			//if (strstr((*ci).c_str(), "::")){
+			//	bFind = true;
+			//}
+
+			if (h.isBeginWithStringIgnoreBlanks((char*)((*ci).c_str()), "function")){
+				bFind = true;
+			}
+
+			if (bFind)
+			{
+				std::string str = h.makeDebugInfoForLua((char*)((*ci).c_str()),filename,true);
+				content.insert(std::next(ci, 1), str);
+			}
+
+		}
+		std::string ret = h.mergeStringList(content,"\r\n");
+		//h.show(content);
+		//h.setClipboardData(ret);
+		h.deallocbuf(file_buf);
+		return ret;
+	}
+
+
 
 	/*
 		example:
@@ -94,6 +157,40 @@ public:
 		}
 		h.show(result);
 		h.writelistToFile(result,"output.txt","\r\n");
+	}
+
+	bool isStringInList(std::string str, std::list<string> l)
+	{
+		for each (std::string var in l)
+		{
+			if (strcmp(str.c_str(), var.c_str()) == 0)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+
+	void runCreateDebuginfoFromClipboardForLua()
+	{
+		a.assert_argc(argc);
+		char* content_filelist = h.load("input_filelist.txt");
+		char* content_excludelist = h.load("exclude_filelist.txt");
+		std::list<string> filelist = h.getFileListWithExt(content_filelist, ".lua");
+		std::list<string> excludelist = h.split(content_excludelist);
+
+		for each (std::string var in filelist)
+		{
+			if (isStringInList(var, excludelist))
+			{
+				continue;
+			}
+			char* fname = (char*)(var.c_str());
+			std::string result = genDebuginfoFromFileForLua(fname);
+			h.writeStringToFile(result, fname);
+		}
+		//h.writelistToFile(result, "output.txt", "\r\n");
 	}
 
 
