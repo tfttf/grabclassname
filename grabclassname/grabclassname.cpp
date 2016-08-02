@@ -43,8 +43,13 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	// test Helper::getFileNameFromFullPath()
 	//cout<<Helper::getFileNameFromFullPath("D:\\work\\mobile\\prj.plane01\\2_develop\\client\\scripts\\config.lua")<<endl;
-	char* buf = Helper::load("D:\\1.txt");
-	cout << buf << endl;
+	//char* buf = Helper::load("D:\\1.txt");
+	//cout << buf << endl;
+
+
+
+
+
 #else
 	
 	TestRun t;

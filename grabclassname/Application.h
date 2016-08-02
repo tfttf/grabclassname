@@ -89,19 +89,34 @@ public:
 	void genDebuginfoFromClipboardForCpp()
 	{
 		std::list<string> content = h.splitWithClipboard();
-
+		int counter = 0;
 		for (std::list<string>::const_iterator ci = content.begin(); ci != content.end(); ++ci)
 		{
 			bool bFind = false;
+			std::list<string>::const_iterator ni = std::next(ci, 1);
 			//if (strstr((*ci).c_str(), "::")){
 			//	bFind = true;
 			//}
-			if (h.contains((char*)((*ci).c_str()), "::") && h.contains((char*)((*ci).c_str()), "(") && (!(h.contains((char*)((*ci).c_str()), "="))) && (!(h.contains((char*)((*ci).c_str()), "#DEBUG:  ")))){
-				bFind = true;
+			//if (h.contains((char*)((*ci).c_str()), "::") && h.contains((char*)((*ci).c_str()), "(") && (!(h.contains((char*)((*ci).c_str()), "="))) && (!(h.contains((char*)((*ci).c_str()), "#DEBUG:  ")))){
+			//	bFind = true;
+			//}
+
+			//one line
+			if (ni == content.end())
+			{
+				bFind = h.isClassMethodOneline((char*)((*ci).c_str()));
 			}
+			//tow line
+			else
+			{
+				bFind = h.isClassMethod((char*)((*ci).c_str()), (char*)((*ni).c_str()));
+			}
+
+
 
 			if (bFind)
 			{
+				cout << counter<<":";
 				std::string str = h.makeDebugInfoForCpp((char*)((*ci).c_str()), "  ");
 				content.insert(std::next(ci, 2), str);
 			}

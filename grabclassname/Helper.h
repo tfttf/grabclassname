@@ -19,6 +19,7 @@ using namespace std;
 #define HELPER_NORMAL_BUF_LEN 2000
 
 
+
 class Helper
 {
 public:
@@ -1141,19 +1142,6 @@ public:
 		return false;
 	}
 
-	static bool isFirstCharBlankOrSymbol(char* buf)
-	{
-		char comp[HELPER_NORMAL_BUF_LEN] = " \t\r\n(){}[],.!-_=+`~@#$%^&*|\\\p<>/?;:'\"";
-		int len = strlen(buf);
-		for (size_t i = 0; i < len; i++)
-		{
-			if (buf[len-1]==comp[i])
-			{
-				return true;
-			}
-		}
-		return false;
-	}
 
 	static bool isFirstCharBlank(char* buf)
 	{
@@ -1170,6 +1158,23 @@ public:
 
 		return false;
 	}
+
+
+	static bool isLastCharBlankOrSymbol(char* buf)
+	{
+		char comp[HELPER_NORMAL_BUF_LEN] = " \t\r\n(){}[],.!-_=+`~@#$%^&*|\\\p<>/?;:'\"";
+		int len = strlen(buf);
+		for (size_t i = 0; i < len; i++)
+		{
+			if (buf[len - 1] == comp[i])
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+
 	static bool isFirstCharBlankOrSymbol(char* buf)
 	{
 		char comp[HELPER_NORMAL_BUF_LEN] = " \t\r\n(){}[],.!-_=+`~@#$%^&*|\\\p<>/?;:'\"";
@@ -1254,24 +1259,209 @@ public:
 		return ret;
 	}
 
+	static bool isSurroundBy(char* buf, char* find, char c)
+	{
+		char* p = strstr(buf, find);
+		if (!p)
+			return false;
+
+		bool fleft  = false;
+		bool fright = false;
+
+		for (int i = 0; i < p - buf; i++)
+		{
+			if (buf[i]==c)
+			{
+				fleft = true;
+			}
+		}
+
+		for (char*  i = p+strlen(find); i < buf + strlen(buf);i++)
+		{
+			if ((*i) == c)
+			{
+				fright = true;
+			}
+		}
+
+		return fleft && fright;
+	}
+
+
+	static bool hasNoStringBefore(char* buf, char* find0, char* find1)
+	{
+		char* p0 = strstr(buf, find0);
+		if (p0 == NULL)
+			return false;
+
+		string toFind = copyToString(buf, p0);
+		if (strstr(toFind.c_str(),find1))
+		{
+			return false;
+		}
+
+		return true;
+	}
+
+
+	//cout << Helper::isClassMethod("	app.init(argc, argv);", "	{");
+	static bool isClassMethod(char* buf, char* nextline)
+	{
+		//no '=' && has "()" && next line has '{' 
+		bool hasOpenParenthesis = contains(buf, '(');
+		bool hasCloseParenthesis = contains(buf, ')');
+		bool hasEqual = contains(buf, '=');
+		bool hasSemicolon = contains(buf, ';');
+		bool hasBraceThisline = contains(buf, '{');
+		bool hasBraceNextline = contains(nextline, '{');
+		bool hasNoDotBeforeOpenParenthesis = hasNoStringBefore(buf, "(", ".");
+		bool hasNoArrowBeforeOpenParenthesis = hasNoStringBefore(buf, "(", "->");
+
+		if (!nextline || strcmp(nextline,"")==0)
+			return false;
+
+
+		if (hasOpenParenthesis && hasCloseParenthesis && (!hasEqual) && (hasBraceNextline || hasBraceThisline) && (hasNoDotBeforeOpenParenthesis && hasNoArrowBeforeOpenParenthesis))
+		{
+
+		}
+		else
+		{
+			return false;
+		}
+
+
+		//如果有分号而没有开大括号，则不为函数
+		if (hasSemicolon)
+		{
+			if (hasBraceThisline)
+			{
+
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+
+
+		if (hasBraceThisline)
+		{
+			return true;
+		}
+		else
+		{
+			string nextlineToFind = copyToString(nextline, strstr(nextline, "{"));
+			bool hasNothingBeforeBraceNextline = isAllCharsOfStringIn((char*)(nextlineToFind.c_str()), " \r\t\n");
+			return hasNothingBeforeBraceNextline;
+		}
+
+		return false;
+	}
+
+
+	//cout << Helper::isClassMethod("	app.init(argc, argv);", "	{");
+	static bool isClassMethodOneline(char* buf)
+	{
+		//no '=' && has "()" && next line has '{' 
+		bool hasOpenParenthesis = contains(buf, '(');
+		bool hasCloseParenthesis = contains(buf, ')');
+		bool hasEqual = contains(buf, '=');
+		bool hasSemicolon = contains(buf, ';');
+		bool hasBraceThisline = contains(buf, '{');
+		bool hasNoDotBeforeOpenParenthesis = hasNoStringBefore(buf, "(", ".");
+		bool hasNoArrowBeforeOpenParenthesis = hasNoStringBefore(buf, "(", "->");
+
+		if (!hasBraceThisline)
+		{
+			return false;
+		}
+
+		if (hasOpenParenthesis && hasCloseParenthesis && (!hasEqual) && hasBraceThisline && (hasNoDotBeforeOpenParenthesis && hasNoArrowBeforeOpenParenthesis))
+		{
+
+		}
+		else
+		{
+			return false;
+		}
+
+
+		//如果有分号而没有开大括号，则不为函数
+		if (hasSemicolon)
+		{
+			if (hasBraceThisline)
+			{
+
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		if (hasBraceThisline)
+		{
+			return true;
+		}
+
+		return false;
+	}
+
+
+
 	static bool isComment(char* buf)
 	{
-		char * p0 = strstr(buf, "//");
-		char * p1 = strstr(buf, "/*");
-		if (p0 == NULL && p1 == NULL)
+		bool hasSemicolon = contains(buf, ';');
+		bool hasContentBeforeSemicolon = false;
+		bool hasSlashStarBegin = contains(buf, "/*");
+		bool hasSlashStarEnd = contains(buf, "*/");
+		bool hasDoubleSlash = contains(buf,"//");
+		bool hasComment = hasSlashStarBegin | hasSlashStarEnd | hasDoubleSlash;
+		bool hasQuote = contains(buf, "\"");
+
+		if (!hasComment)
 			return false;
-		if (p0)
+
+		//has possible the statement is comment
+
+		//100% percent comment
+		if (hasSlashStarEnd && !hasQuote)
+			return true;
+
+		char* pSlashStarBegin = strstr(buf,"/*");
+		char* pDoubleSlash = strstr(buf, "//");
+
+		string tofind;
+		if (pSlashStarBegin && !pDoubleSlash)
 		{
-			std::string str = copyToString(buf, p0);
-			isAllCharsOfStringIn();
+			tofind = copyToString(buf, pSlashStarBegin);
+		}
+		else if (!pSlashStarBegin && pDoubleSlash)
+		{
+			tofind = copyToString(buf, pDoubleSlash);
+		}
+		else if (pSlashStarBegin && pDoubleSlash)
+		{
+			if (pSlashStarBegin < pDoubleSlash)
+				tofind = copyToString(buf, pSlashStarBegin);
+			else
+				tofind = copyToString(buf, pDoubleSlash);
+		}
+		else if (!pSlashStarBegin && !pDoubleSlash)
+		{
+			// "*/" find
+			return true;
 		}
 
-		if (p1)
-		{
+		char* tmp = allocbuf(HELPER_NORMAL_BUF_LEN);
+		strcpy(tmp, tofind.c_str());
 
-		}
+		bool ret = isAllCharsOfStringIn(tmp, " \t\r\n");
 
-
+		deallocbuf(tmp);
+		return ret;
 	}
 
 
@@ -1333,6 +1523,8 @@ public:
 		std::string ret = bufprint;
 
 		deallocbuf(buf);
+
+		cout << "bufprint = " << bufprint << endl;
 		deallocbuf(bufprint);
 		return ret;
 	}
