@@ -22,7 +22,11 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	//获取文件中的类名
 	//app.runfilterWithFile("class.txt", ".cpp;.h;.lua");
-	app.runCreateDebuginfoFromClipboardForLua();
+	//把指定文件夹的lua代码加上调试信息
+	//app.runCreateDebuginfoFromFileForLua();
+	//从剪贴板添加调试信息
+	app.genDebuginfoFromClipboardForCpp();
+	//从剪贴板去掉调试信息
 #elif IS_RELEASE==2
 	// test std::next()
 	/*
@@ -39,8 +43,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	// test Helper::getFileNameFromFullPath()
 	//cout<<Helper::getFileNameFromFullPath("D:\\work\\mobile\\prj.plane01\\2_develop\\client\\scripts\\config.lua")<<endl;
-
-
+	char* buf = Helper::load("D:\\1.txt");
+	cout << buf << endl;
 #else
 	
 	TestRun t;

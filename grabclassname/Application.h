@@ -85,6 +85,64 @@ public:
 		h.setClipboardData(ret);
 	}
 
+	//generate info from clipboard
+	void genDebuginfoFromClipboardForCpp()
+	{
+		std::list<string> content = h.splitWithClipboard();
+
+		for (std::list<string>::const_iterator ci = content.begin(); ci != content.end(); ++ci)
+		{
+			bool bFind = false;
+			//if (strstr((*ci).c_str(), "::")){
+			//	bFind = true;
+			//}
+			if (h.contains((char*)((*ci).c_str()), "::") && h.contains((char*)((*ci).c_str()), "(") && (!(h.contains((char*)((*ci).c_str()), "="))) && (!(h.contains((char*)((*ci).c_str()), "#DEBUG:  ")))){
+				bFind = true;
+			}
+
+			if (bFind)
+			{
+				std::string str = h.makeDebugInfoForCpp((char*)((*ci).c_str()), "  ");
+				content.insert(std::next(ci, 2), str);
+			}
+
+		}
+		std::string ret = h.mergeStringList(content, "\r\n");
+		//h.show(content);
+		h.setClipboardData(ret);
+	}
+
+	//delete debug info from clipboard
+	void deleteDebuginfoFromClipboardForCpp()
+	{
+		std::list<string> content = h.splitWithClipboard();
+
+		for (std::list<string>::const_iterator ci = content.begin(); ci != content.end(); ++ci)
+		{
+			bool bFind = false;
+			//if (strstr((*ci).c_str(), "::")){
+			//	bFind = true;
+			//}
+			cout << (*ci).c_str() << 1 << endl;
+			if (h.contains((char*)((*ci).c_str()), "::")){
+				bFind = true;
+			}
+			cout << (*ci).c_str() << 2 << endl;
+
+			if (bFind)
+			{
+				std::string str = h.makeDebugInfoForCpp((char*)((*ci).c_str()), "  ");
+				content.insert(std::next(ci, 1), str);
+			}
+			cout << (*ci).c_str() << 3 << endl;
+
+		}
+		std::string ret = h.mergeStringList(content, "\r\n");
+		//h.show(content);
+		h.setClipboardData(ret);
+	}
+
+
 
 	//generate info from file
 	std::string genDebuginfoFromFileForLua(char* filename)
@@ -171,8 +229,7 @@ public:
 		return false;
 	}
 
-
-	void runCreateDebuginfoFromClipboardForLua()
+	void runCreateDebuginfoFromFileForLua()
 	{
 		a.assert_argc(argc);
 		char* content_filelist = h.load("input_filelist.txt");

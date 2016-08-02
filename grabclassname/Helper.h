@@ -18,6 +18,7 @@ using namespace std;
 #define HELPER_LANGUAGE_CPP 1
 #define HELPER_NORMAL_BUF_LEN 2000
 
+
 class Helper
 {
 public:
@@ -498,6 +499,263 @@ public:
 		return lines;
 	}
 
+	static bool contains(char* src, char c)
+	{
+		int len = strlen(src);
+		for (int i = 0; i < len; i++)
+		{
+			if (src[i] == c)
+				return true;
+		}
+		return false;
+	}
+
+	static bool isReturnExist(char* buf)
+	{
+		bool r = contains(buf, '\r');
+		if (r == true)
+			return true;
+		bool n = contains(buf, '\n');
+		if (n == true)
+			return true;
+		return false;
+	}
+
+	static bool isReturnAllRs(char* buf)
+	{
+		int len = strlen(buf);
+		bool n = contains(buf, '\n');
+		if (n == true)
+			return false;
+		bool r = contains(buf, '\r');
+		if (r == true)
+			return true;
+		return false;
+	}
+
+	static bool isReturnAllNs(char* buf)
+	{
+		int len = strlen(buf);
+		bool r = contains(buf, '\r');
+		if (r == true)
+			return false;
+		bool n = contains(buf, '\n');
+		if (n == true)
+			return true;
+		return false;
+	}
+
+	static bool isReturnAllRNs(char* buf)
+	{
+		bool allr = isReturnAllRs(buf);
+		if (allr == true)
+			return false;
+
+		bool alln = isReturnAllNs(buf);
+		if (alln == true)
+			return false;
+
+		std::list<int> list_r = getIndexesMatchChar(buf, '\r');
+		std::list<int> list_n = getIndexesMatchChar(buf, '\n');
+		bool match = isListEqual(list_r, list_n);
+		return match;
+	}
+
+	static std::list<int> getIndexesMatchChar(char* buf, char c)
+	{
+		std::list<int> ret;
+		int len = strlen(buf);
+		for (size_t i = 0; i < len; i++)
+		{
+			if (buf[i]==c)
+			{
+				ret.push_back(i);
+			}
+		}
+		return ret;
+	}
+
+
+
+	static bool isListEqual(std::list<int> la, std::list<int> lb)
+	{
+		if (la.size() != lb.size())
+			return false;
+		std::list<int>::const_iterator cj = lb.begin();
+		for (std::list<int>::const_iterator ci = la.begin(); ci != la.end(); ci++,cj++)
+		{
+			int a = (*ci);
+			int b = (*cj);
+			if (a != b-1)
+				return false;
+		}
+		return true;
+	}
+
+
+
+
+	static bool isReturnClean(char* buf)
+	{
+		bool e = isReturnExist(buf);
+		if (!e)
+			return false;
+		bool r = isReturnAllRs(buf);
+		bool n = isReturnAllNs(buf);
+		bool rn = isReturnAllRNs(buf);
+		return r || n || rn;
+	}
+
+	static std::string replaceAll(std::string src, std::string from, std::string to){
+		size_t index = 0;
+		std::string ret = src;
+		while ((index = ret.find(from, index)) != std::string::npos)
+		{
+			ret.replace(index, from.length(), to);
+			index += to.length();
+		}
+		return ret;
+	}
+
+	static std::string makeReturnsClean(char* buf)
+	{
+		int len0 = strlen(buf);
+		string ret = buf;
+		ret = replaceAll(ret, "\r\n", "\n");
+		ret = replaceAll(ret, "\r", "\n");
+		ret = replaceAll(ret, "\n", "\r\n");
+
+		return ret;
+	}
+
+
+
+	//split with '\r' or '\n' and return every char including '\r' or '\n'
+	static std::list<string> splitRaw(char* buf)
+	{
+		char* tmpbuf = copyBuf(buf, HELPER_MAX_BUF_LEN);
+		int cline = getLineCounts(tmpbuf);
+		int buflen = strlen(tmpbuf);
+		std::list<string> lines;
+		bool containsRNClean = isReturnClean(buf);
+		bool containsRN = contains(buf, "\r\n");
+		bool containsR = contains(buf, "\r");
+		bool containsN = contains(buf, "\n");
+		bool oneline = (containsR == false && containsN == false) ? true : false;
+		replace(tmpbuf, buflen, '\r', 0);
+		replace(tmpbuf, buflen, '\n', 0);
+
+
+		char** pointers = new char*[HELPER_MAX_LINE_COUNTS];
+
+		if (oneline)
+		{
+			int linecount = 0;
+			for (int i = 0; i < buflen;)
+			{
+				if (tmpbuf[i] != 0)
+				{
+					pointers[linecount] = tmpbuf + i;
+					lines.push_back(pointers[linecount]);
+					linecount++;
+					i += strlen(tmpbuf + i);
+				}
+				else
+				{
+					i += 1;
+				}
+			}
+		}
+		else if (containsRNClean)
+		{
+			int linecount = 0;
+			for (int i = 0; i < buflen;)
+			{
+				if (tmpbuf[i] != 0)
+				{
+					pointers[linecount] = tmpbuf + i;
+					lines.push_back(pointers[linecount]);
+					linecount++;
+					i += strlen(tmpbuf + i);
+				}
+				else
+				{
+					lines.push_back("\r\n");
+					i += 2;
+				}
+			}
+		}
+		else if (containsN)
+		{
+			int linecount = 0;
+			for (int i = 0; i < buflen;)
+			{
+				if (tmpbuf[i] != 0)
+				{
+					pointers[linecount] = tmpbuf + i;
+					lines.push_back(pointers[linecount]);
+					linecount++;
+					i += strlen(tmpbuf + i);
+				}
+				else
+				{
+					lines.push_back("\n");
+					i += 1;
+				}
+			}
+		}
+		else if (containsR)
+		{
+			int linecount = 0;
+			for (int i = 0; i < buflen;)
+			{
+				if (tmpbuf[i] != 0)
+				{
+					pointers[linecount] = tmpbuf + i;
+					lines.push_back(pointers[linecount]);
+					linecount++;
+					i += strlen(tmpbuf + i);
+				}
+				else
+				{
+					lines.push_back("\r");
+					i += 1;
+				}
+			}
+		}
+		else
+		{
+			int linecount = 0;
+			string returnClean = makeReturnsClean(tmpbuf);
+			zerobuf(tmpbuf);
+			strcpy(tmpbuf, returnClean.c_str());
+			int newlen = strlen(tmpbuf);
+			replace(tmpbuf, newlen, '\r', 0);
+			replace(tmpbuf, newlen, '\n', 0);
+
+			for (int i = 0; i < buflen;)
+			{
+				if (tmpbuf[i] != 0)
+				{
+					pointers[linecount] = tmpbuf + i;
+					lines.push_back(pointers[linecount]);
+					linecount++;
+					i += strlen(tmpbuf + i);
+				}
+				else
+				{
+					lines.push_back("\r\n");
+					i += 2;
+				}
+			}
+		}
+
+		delete[] pointers;
+		delete[] tmpbuf;
+		tmpbuf = NULL;
+		return lines;
+	}
+
 
 
 	//split with clipboard info
@@ -516,6 +774,27 @@ public:
 
 		return ret;
 	}
+
+	//split raw with clipboard info(this method contains \r\n)
+	static std::list<string> splitRawWithClipboard()
+	{
+		std::string content = getClipboardData();
+		const char* poriginal = content.c_str();
+		char* buf = copyBuf((char*)(poriginal), 1);
+		std::list<string> ret = splitRaw(buf);
+
+
+
+		delete[]buf;
+		buf = NULL;
+
+		return ret;
+	}
+
+
+
+
+	
 
 
 	static char* load(char* filename)
@@ -833,6 +1112,227 @@ public:
 
 		deallocbuf(buf);
 		deallocbuf(buffilename);
+		deallocbuf(bufprint);
+		return ret;
+	}
+
+	static bool contains(char* buf, char c0, char c1)
+	{
+		int len = strlen(buf);
+		for (size_t i = 0; i < len; i++)
+		{
+			if (buf[i] == c0 || buf[i] == c1)
+				return true;
+		}
+		return false;
+	}
+
+	static bool isLastCharBlank(char* buf)
+	{
+		char comp[HELPER_NORMAL_BUF_LEN] = " \t\r\n\p";
+		int len = strlen(buf);
+		for (size_t i = 0; i < len; i++)
+		{
+			if (buf[len - 1] == comp[i])
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	static bool isFirstCharBlankOrSymbol(char* buf)
+	{
+		char comp[HELPER_NORMAL_BUF_LEN] = " \t\r\n(){}[],.!-_=+`~@#$%^&*|\\\p<>/?;:'\"";
+		int len = strlen(buf);
+		for (size_t i = 0; i < len; i++)
+		{
+			if (buf[len-1]==comp[i])
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	static bool isFirstCharBlank(char* buf)
+	{
+		char comp[HELPER_NORMAL_BUF_LEN] = " \t\r\n\p";
+		int len_comp = strlen(comp);
+
+		for (size_t i = 0; i < strlen(comp); i++)
+		{
+			if (buf[0] == comp[i])
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+	static bool isFirstCharBlankOrSymbol(char* buf)
+	{
+		char comp[HELPER_NORMAL_BUF_LEN] = " \t\r\n(){}[],.!-_=+`~@#$%^&*|\\\p<>/?;:'\"";
+		int len_comp = strlen(comp);
+
+		for (size_t i = 0; i < strlen(comp); i++)
+		{
+			if (buf[0] == comp[i])
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	static bool isCharPrintable(char c)
+	{
+		return (!(c == '\r' || c == '\n' || c == ' ' || c == '\t' || c == '\p'));
+	}
+
+	static bool isCharBlank(char c)
+	{
+		return (c == '\r' || c == '\n' || c == ' ' || c == '\t' || c == '\p');
+	}
+
+	static bool isCharBlankOrSymbol(char c)
+	{
+		char comp[HELPER_NORMAL_BUF_LEN] = " \t\r\n(){}[],.!-_=+`~@#$%^&*|\\\p<>/?;:'\"";
+		int len_comp = strlen(comp);
+
+		for (size_t i = 0; i < strlen(comp); i++)
+		{
+			if (c == comp[i])
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+
+	static bool containsWord(char* buf, char* word)
+	{
+		char * p = strstr(buf, word);
+		if (!p)
+			return false;
+
+
+		if (buf == p)
+		{
+			//like:
+			//bool fun()
+			if (isFirstCharBlank(buf + strlen(word)))
+			{
+				return true;
+			}
+		}
+		else
+		{
+			//like:
+			//static bool fun()
+			if (isFirstCharBlank(p + strlen(word)) && isCharBlank(p[-1]))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+
+	static std::string copyToString(char* head, char* tail)
+	{
+		std::string ret;
+		if (head == tail)
+			return ret;
+		char* tmp = allocbuf(HELPER_NORMAL_BUF_LEN);
+		memcpy(tmp, head, tail - head);
+		ret = tmp;
+		deallocbuf(tmp);
+		return ret;
+	}
+
+	static bool isComment(char* buf)
+	{
+		char * p0 = strstr(buf, "//");
+		char * p1 = strstr(buf, "/*");
+		if (p0 == NULL && p1 == NULL)
+			return false;
+		if (p0)
+		{
+			std::string str = copyToString(buf, p0);
+			isAllCharsOfStringIn();
+		}
+
+		if (p1)
+		{
+
+		}
+
+
+	}
+
+
+	static bool containsStroke(char* buf, char* word)
+	{
+		char * p = strstr(buf, word);
+		if (!p)
+			return false;
+
+
+		if (buf == p)
+		{
+			//like:
+			//bool fun()
+			if (isFirstCharBlankOrSymbol(buf + strlen(word)))
+			{
+				return true;
+			}
+		}
+		else
+		{
+			//like:
+			//static bool fun()
+			if (isFirstCharBlankOrSymbol(p + strlen(word)) && isCharBlankOrSymbol(p[-1]))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+
+	static bool isCppFunction(char* buf)
+	{
+		//h.contains((char*)((*ci).c_str()), "::") && h.contains((char*)((*ci).c_str()), "(") && (!(h.contains((char*)((*ci).c_str()), "="))) && (!(h.contains((char*)((*ci).c_str()), "#DEBUG:  ")))
+		if (containsStroke(buf, "::") && containsStroke(buf, "("))
+		{
+			return true;
+		}
+		else
+		{
+			if (containsStroke(buf, "static") && containsStroke(buf, "("))
+			{
+				return true;
+			}
+		}
+
+	}
+
+	static std::string makeDebugInfoForCpp(char* src, char* filename)
+	{
+		char* buf = allocbuf(HELPER_NORMAL_BUF_LEN);
+		char* bufprint = allocbuf(HELPER_NORMAL_BUF_LEN);
+
+		sprintf(buf, "%s", src);
+
+		sprintf(bufprint, "    CCLog(\"#DEBUG:  %-20s\");", buf);
+
+		std::string ret = bufprint;
+
+		deallocbuf(buf);
 		deallocbuf(bufprint);
 		return ret;
 	}
